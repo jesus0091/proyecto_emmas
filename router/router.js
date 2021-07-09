@@ -1,5 +1,9 @@
 /*RUTAS*/
 const routes = [{
+        path: "",
+        action: "home"
+    },
+    {
         path: "/home",
         action: "home"
     },
@@ -22,11 +26,16 @@ const router = () => {
             });
             break;
         case routes[1].action:
-            $.get("./views/about.html", function (data) {
+            $.get("./views/home.html", function (data) {
                 $("#app").html(data);
             });
             break;
         case routes[2].action:
+            $.get("./views/about.html", function (data) {
+                $("#app").html(data);
+            });
+            break;
+        case routes[3].action:
             $.get("./views/buy.html", function (data) {
                 $("#app").html(data);
             });
