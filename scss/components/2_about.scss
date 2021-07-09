@@ -1,0 +1,16 @@
+@import '0_navbar.scss';
+
+.emmas-about{
+    .emmas-our {
+        color: var(--theme-color-title);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    img{
+        width: 300px;
+    }
+
+
+
+}

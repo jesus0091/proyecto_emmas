@@ -1,0 +1,145 @@
+@import '5_variables.scss';
+
+footer {
+    // display: flex;
+    // justify-content: center;
+    // padding: 30px;
+    background-color: var(--theme-bg-footer);
+
+    // margin: 0;
+    // padding: 0;
+    // // height: 600px;
+    // // background-image: url(../img/Banner.jpg);
+    // // background-size: cover;
+    // // background-attachment: fixed;
+    // // background-position: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // // flex-wrap: nowrap;
+    // position: relative;
+    // z-index: -1;
+
+    
+
+
+    // .wave-footer {
+    //     // height: 12%;
+    //     width: 100%;
+    //     position: absolute;
+    //     bottom: 0;
+    // }
+
+    img {
+        border-radius: 100px;
+        width: 120px;
+    }
+
+    h3 {
+        color: var(--theme-color-white);
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+
+    }
+
+    ul {
+        .nav-link {
+            padding: 0.15rem;
+            color: var(--theme-color-title);
+
+        }
+    }
+
+    // .icons-media {
+    //     display: flex;
+    //     justify-content: center;
+    // }
+}
+
+
+
+
+$button-height: 30px;
+$box-width: 300px;
+$box-height: 212px;
+
+.share-buttons {
+    display: flex;
+    flex-direction: column;
+    
+    .share-button {
+      float: left;
+      margin-top: 15px;
+      
+      &:first-child {
+        margin-top: 0;
+      }
+      
+      &:after {
+        clear: both;
+        display: table;
+      }
+    }
+  }
+  
+  .share-button {
+    display: block;
+    position: relative;
+    height: $button-height;
+    
+    &:hover {
+      cursor: pointer;
+      
+      .share-button-primary {
+        box-shadow: 1px 0 0 0 rgba(0, 0, 0, .1);
+      }
+      
+      .share-button-secondary-content {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }
+  
+  .share-button-primary {
+    position: absolute;
+    background: #fff;
+    width: $button-height;
+    height: $button-height;
+    text-align: center;
+    border-radius: ($button-height / 2);
+    left: 0;
+    top: 50%;
+    margin-top: -($button-height / 2);
+  }
+  
+  .share-button-icon {
+    display: block;
+    color: var(--theme-color-title);
+    position: absolute;
+    width: $button-height;
+    line-height: $button-height;
+    font-size: 16px;
+    margin-top: 1px;
+  }
+  
+  .share-button-secondary {
+    overflow: hidden;
+    margin-left: ($button-height / 2);
+    height: $button-height;
+  }
+  
+  .share-button-secondary-content {
+    font-size: 1rem;
+    background: #fff;
+    display: block;
+    height: $button-height;
+    text-align: left;
+    padding-left: ($button-height * .8);
+    padding-right: ($button-height * .6);
+    line-height: $button-height;
+    color: var(--theme-color-title);
+    border-radius: 0 ($button-height / 2) ($button-height / 2) 0;
+    transform: translate3d(-100%, 0, 0);
+    transition: transform 175ms ease;
+  }
