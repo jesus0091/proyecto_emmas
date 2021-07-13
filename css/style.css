@@ -1,12 +1,15 @@
 :root {
   --theme-color-white: #ffffff;
-  --theme-bg-home: #FCF;
-  --theme-bg-footer: #F5B7D2;
+  --theme-color-black: rgb(0, 0, 0);
+  --theme-color-title: rgb(70, 51, 51);
+  --theme-color-footer: rgb(235, 212, 212);
+  --theme-bg-body: rgb(243, 225, 225);
+  --theme-bg-footer: rgb(131, 88, 88);
   --theme-color-title: rgb(70, 51, 51);
   --theme-bg-card: rgba(133 133 133 / 0.1);
   --theme-nav-text: rgba(255 255 255 / 1);
   --theme-color-: rgb(125, 90, 90);
-  --theme-color: rgb(241, 209, 209);
+  --theme-color: rgba(241, 209, 209, 0.5);
   --theme-color-: rgb(243, 225, 225);
   --theme-color-bg: rgb(250, 242, 242);
   --theme-color-: rgb(255, 240, 240);
@@ -28,6 +31,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
 header {
   background-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -36,15 +46,20 @@ header img {
   width: 75px;
   border-radius: 100px;
 }
-header nav a {
-  color: var(--theme-nav-text);
-  font-size: 1rem;
+header nav ul a {
+  display: flex;
+  background: var(--theme-bg-body);
+  border-radius: 50px;
+  padding: 0px 10px !important;
+  margin: 5px;
+  color: var(--theme-bg-footer);
+  font-size: 1.15rem;
 }
 
 .jumbo-tron {
   margin: 0;
   padding: 0;
-  height: 600px;
+  height: 100vh;
   background-image: url(../img/Banner.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -67,13 +82,16 @@ header nav a {
 
 :root {
   --theme-color-white: #ffffff;
-  --theme-bg-home: #FCF;
-  --theme-bg-footer: #F5B7D2;
+  --theme-color-black: rgb(0, 0, 0);
+  --theme-color-title: rgb(70, 51, 51);
+  --theme-color-footer: rgb(235, 212, 212);
+  --theme-bg-body: rgb(243, 225, 225);
+  --theme-bg-footer: rgb(131, 88, 88);
   --theme-color-title: rgb(70, 51, 51);
   --theme-bg-card: rgba(133 133 133 / 0.1);
   --theme-nav-text: rgba(255 255 255 / 1);
   --theme-color-: rgb(125, 90, 90);
-  --theme-color: rgb(241, 209, 209);
+  --theme-color: rgba(241, 209, 209, 0.5);
   --theme-color-: rgb(243, 225, 225);
   --theme-color-bg: rgb(250, 242, 242);
   --theme-color-: rgb(255, 240, 240);
@@ -95,62 +113,228 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-header {
-  background-color: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-}
-header img {
-  width: 75px;
-  border-radius: 100px;
-}
-header nav a {
-  color: var(--theme-nav-text);
-  font-size: 1rem;
-}
-
-.jumbo-tron {
-  margin: 0;
-  padding: 0;
-  height: 600px;
-  background-image: url(../img/Banner.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  position: relative;
-  z-index: -1;
-}
-.jumbo-tron .header-text {
-  height: 500px;
-}
-.jumbo-tron .wave {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-}
-
-.emmas-about .emmas-our {
-  color: var(--theme-color-title);
-  display: flex;
-  justify-content: center;
+.emmas-home h2 {
   text-align: center;
+  font-family: "Pacifico", cursive;
+  font-size: 3.5rem;
 }
-.emmas-about img {
-  width: 300px;
+.emmas-home .img-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.emmas-home .img_brownie {
+  height: 17rem;
+}
+.emmas-home .svg_brownie {
+  position: absolute;
+  transform: translate(-30%, -30%);
+  z-index: -1;
+  height: 600px;
+}
+.emmas-home .img_chocoteja {
+  height: 23rem;
+}
+.emmas-home .svg_chocoteja {
+  position: absolute;
+  transform: translate(-20%, -20%);
+  z-index: -1;
+  height: 600px;
+}
+.emmas-home .img_alfajor {
+  height: 18rem;
+}
+.emmas-home .svg_alfajor {
+  position: absolute;
+  transform: translate(-30%, -35%);
+  z-index: -1;
+  height: 600px;
+}
+.emmas-home .card {
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+.emmas-home .card h3 {
+  font-family: "Pacifico", cursive;
+  font-size: 3.5rem;
+  color: var(--theme-color-title);
+}
+.emmas-home .card .card-body {
+  padding: 0;
+}
+.emmas-home .card .card-body p {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+.emmas-home .card .card-body .text-secondary {
+  font-size: 1rem;
+}
+.emmas-home .card .card-body .text-secondary span {
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 :root {
   --theme-color-white: #ffffff;
-  --theme-bg-home: #FCF;
-  --theme-bg-footer: #F5B7D2;
+  --theme-color-black: rgb(0, 0, 0);
+  --theme-color-title: rgb(70, 51, 51);
+  --theme-color-footer: rgb(235, 212, 212);
+  --theme-bg-body: rgb(243, 225, 225);
+  --theme-bg-footer: rgb(131, 88, 88);
   --theme-color-title: rgb(70, 51, 51);
   --theme-bg-card: rgba(133 133 133 / 0.1);
   --theme-nav-text: rgba(255 255 255 / 1);
   --theme-color-: rgb(125, 90, 90);
-  --theme-color: rgb(241, 209, 209);
+  --theme-color: rgba(241, 209, 209, 0.5);
+  --theme-color-: rgb(243, 225, 225);
+  --theme-color-bg: rgb(250, 242, 242);
+  --theme-color-: rgb(255, 240, 240);
+  --theme-color-: rgb(235, 212, 212);
+  --theme-color-: rgb(131, 88, 88);
+  --theme-color-: rgb(70, 51, 51);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: var(--theme-color-bg);
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+header img {
+  width: 75px;
+  border-radius: 100px;
+}
+header nav ul a {
+  display: flex;
+  background: var(--theme-bg-body);
+  border-radius: 50px;
+  padding: 0px 10px !important;
+  margin: 5px;
+  color: var(--theme-bg-footer);
+  font-size: 1.15rem;
+}
+
+.jumbo-tron {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url(../img/Banner.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+  z-index: -1;
+}
+.jumbo-tron .header-text {
+  height: 500px;
+}
+.jumbo-tron .wave {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.emmas-about h2 {
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  font-size: 3.5rem;
+  color: var(--theme-color-bg);
+  letter-spacing: 0.5;
+  font-weight: lighter;
+}
+.emmas-about .card {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: row;
+}
+.emmas-about .card .card-img {
+  display: flex;
+  align-items: center;
+  min-height: 460px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.emmas-about .card .video-frame {
+  border-radius: 10px;
+  overflow: hidden;
+  height: max-content;
+}
+.emmas-about .card .video-frame svg {
+  height: 530px;
+  top: -45px;
+}
+.emmas-about .card .video-frame .svg_1 {
+  height: 560px;
+  z-index: 1;
+}
+.emmas-about .card .video_media {
+  height: 300px;
+}
+.emmas-about .card .card-title {
+  width: max-content;
+  background: var(--theme-color-white);
+  padding: 20px;
+  transform: translateX(-40%);
+  border-radius: 15px;
+  z-index: 1;
+}
+.emmas-about .card .card-title h3 {
+  font-weight: bolder;
+}
+.emmas-about .card .card-title h3 span {
+  font-family: "Pacifico", sans-serif;
+  color: var(--theme-bg-footer);
+  font-size: 2.15rem;
+  font-weight: normal;
+}
+.emmas-about .card .card-description p {
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.bg-brown {
+  background: var(--theme-bg-footer);
+}
+
+:root {
+  --theme-color-white: #ffffff;
+  --theme-color-black: rgb(0, 0, 0);
+  --theme-color-title: rgb(70, 51, 51);
+  --theme-color-footer: rgb(235, 212, 212);
+  --theme-bg-body: rgb(243, 225, 225);
+  --theme-bg-footer: rgb(131, 88, 88);
+  --theme-color-title: rgb(70, 51, 51);
+  --theme-bg-card: rgba(133 133 133 / 0.1);
+  --theme-nav-text: rgba(255 255 255 / 1);
+  --theme-color-: rgb(125, 90, 90);
+  --theme-color: rgba(241, 209, 209, 0.5);
   --theme-color-: rgb(243, 225, 225);
   --theme-color-bg: rgb(250, 242, 242);
   --theme-color-: rgb(255, 240, 240);
@@ -173,16 +357,14 @@ body {
 }
 
 .emmas-buy h2 {
-  font-family: "Dancing Script", sans-serif;
+  font-family: "Pacifico", sans-serif;
   text-align: center;
-  font-weight: bold;
   font-size: 3.5rem;
   letter-spacing: 0.5px;
   color: var(--theme-color-title);
   margin-bottom: 50px;
 }
 .emmas-buy .card {
-  background-color: var(--theme-bg-card);
   border-radius: 15px;
   border: none;
   min-height: 21rem;
@@ -203,15 +385,68 @@ body {
   line-height: 1.15;
 }
 
+.bg-pink {
+  background-color: rgba(255, 192, 203, 0.2);
+}
+
+.bg-yellow {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+
+.bg-green {
+  background-color: rgba(0, 255, 127, 0.2);
+}
+
+.spikes {
+  position: relative;
+  height: 0px;
+}
+
+.spikes::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0%;
+  top: 100%;
+  z-index: 3;
+  display: block;
+  height: 50px;
+  background-size: 50px 100%;
+  background-image: linear-gradient(135deg, var(--theme-color-bg) 25%, transparent 25%), linear-gradient(225deg, var(--theme-color-bg) 25%, transparent 25%);
+  background-position: 0 0;
+}
+
+.spikes-2 {
+  position: relative;
+  height: 0px;
+}
+
+.spikes-2::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0%;
+  bottom: 100%;
+  z-index: 3;
+  display: block;
+  height: 50px;
+  background-size: 50px 100%;
+  background-image: linear-gradient(135deg, var(--theme-bg-footer) 25%, transparent 25%), linear-gradient(225deg, var(--theme-bg-footer) 25%, transparent 25%);
+  background-position: 0 0;
+}
+
 :root {
   --theme-color-white: #ffffff;
-  --theme-bg-home: #FCF;
-  --theme-bg-footer: #F5B7D2;
+  --theme-color-black: rgb(0, 0, 0);
+  --theme-color-title: rgb(70, 51, 51);
+  --theme-color-footer: rgb(235, 212, 212);
+  --theme-bg-body: rgb(243, 225, 225);
+  --theme-bg-footer: rgb(131, 88, 88);
   --theme-color-title: rgb(70, 51, 51);
   --theme-bg-card: rgba(133 133 133 / 0.1);
   --theme-nav-text: rgba(255 255 255 / 1);
   --theme-color-: rgb(125, 90, 90);
-  --theme-color: rgb(241, 209, 209);
+  --theme-color: rgba(241, 209, 209, 0.5);
   --theme-color-: rgb(243, 225, 225);
   --theme-color-bg: rgb(250, 242, 242);
   --theme-color-: rgb(255, 240, 240);
@@ -235,20 +470,28 @@ body {
 
 footer {
   background-color: var(--theme-bg-footer);
+  margin-top: 10rem;
+}
+footer .f-margin {
+  margin-top: -50px;
 }
 footer img {
-  border-radius: 100px;
-  width: 120px;
+  width: 7rem;
 }
 footer h3 {
   color: var(--theme-color-white);
-  font-family: "Lato", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   letter-spacing: 0.5px;
 }
 footer ul .nav-link {
   padding: 0.15rem;
-  color: var(--theme-color-title);
+  color: var(--theme-color-footer);
+  font-size: 1rem;
+  line-height: 1.25;
+}
+footer ul .nav-link:hover {
+  color: var(--theme-color-white);
 }
 
 .share-buttons {
@@ -276,7 +519,7 @@ footer ul .nav-link {
   cursor: pointer;
 }
 .share-button:hover .share-button-primary {
-  box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.3);
 }
 .share-button:hover .share-button-secondary-content {
   transform: translate3d(0, 0, 0);
@@ -284,7 +527,7 @@ footer ul .nav-link {
 
 .share-button-primary {
   position: absolute;
-  background: #fff;
+  background: var(--theme-color-white);
   width: 30px;
   height: 30px;
   text-align: center;
@@ -312,7 +555,7 @@ footer ul .nav-link {
 
 .share-button-secondary-content {
   font-size: 1rem;
-  background: #fff;
+  background: var(--theme-color-white);
   display: block;
   height: 30px;
   text-align: left;
@@ -325,15 +568,230 @@ footer ul .nav-link {
   transition: transform 175ms ease;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1.45);
+    opacity: 0;
+  }
+}
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+.nav-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: flex-end;
+  width: auto;
+  height: auto;
+  position: fixed;
+  z-index: 8;
+  bottom: 0px;
+  right: 0px;
+  padding: 5px;
+  margin: 0px;
+}
+@media (max-width: 360px) {
+  .nav-bottom {
+    width: 320px;
+  }
+}
+
+.whatsapp-button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 60px;
+  height: 60px;
+  z-index: 10;
+  transition: 0.3s;
+  margin: 10px;
+  padding: 7px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #77bb4a;
+  /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
+  -webkit-box-shadow: 1px 1px 6px 0px rgba(68, 68, 68, 0.705);
+  -moz-box-shadow: 1px 1px 6px 0px rgba(68, 68, 68, 0.705);
+  box-shadow: 1px 1px 6px 0px rgba(68, 68, 68, 0.705);
+}
+
+.circle-anime {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-content: center;
+  width: 60px;
+  height: 60px;
+  top: 15px;
+  right: 15px;
+  border-radius: 50%;
+  transition: 0.3s;
+  background-color: #77bb4a;
+  animation: pulse 1.2s 4s ease 4;
+}
+
+.popup-whatsapp {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  bottom: 85px;
+  right: 6px;
+  transition: 0.5s;
+  border-radius: 10px;
+  background-color: var(--theme-color-white);
+  /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
+  -webkit-box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
+  -moz-box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
+  box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
+  animation: slideInRight 0.6s 0s both;
+}
+.popup-whatsapp > div {
+  margin: 5px;
+}
+@media (max-width: 680px) {
+  .popup-whatsapp p {
+    font-size: 0.9em;
+  }
+}
+.popup-whatsapp > .content-whatsapp.-top {
+  display: flex;
+  flex-direction: column;
+}
+.popup-whatsapp > .content-whatsapp.-top p {
+  color: #585858;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1em;
+}
+.popup-whatsapp > .content-whatsapp.-bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+.closePopup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  margin: 0px 0px 15px 0px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #f76060;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+  box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+}
+.closePopup:hover {
+  background-color: #f71d1d;
+  transition: 0.3s;
+}
+
+.send-msPopup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin: 0px 0px 0px 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+  box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+}
+.send-msPopup:hover {
+  background-color: #f8f8f8;
+  transition: 0.3s;
+}
+
+.is-active-whatsapp-popup {
+  display: flex;
+  animation: slideInRight 0.6s 0s both;
+}
+
+input.whats-input[type=text] {
+  width: 250px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 0px solid #ffffff;
+  border-radius: 20px;
+  font-size: 1em;
+  background-color: #ffffff;
+  padding: 0px 0px 0px 10px;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  outline: none;
+  transition: 0.3s;
+}
+@media (max-width: 420px) {
+  input.whats-input[type=text] {
+    width: 225px;
+  }
+}
+input.whats-input::placeholder {
+  /* Most modern browsers support this now. */
+  color: rgba(68, 68, 68, 0.705);
+  opacity: 1;
+}
+input.whats-input[type=text]:focus {
+  background-color: #f8f8f8;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  transition: 0.3s;
+}
+
+.icon-whatsapp-small {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-whatsapp {
+  font-size: 2.5rem;
+  color: var(--theme-color-white);
+}
+
+.icon-font-color {
+  color: #ffffff;
+}
+
+.icon-font-color--black {
+  color: #333333;
+}
+
 :root {
   --theme-color-white: #ffffff;
-  --theme-bg-home: #FCF;
-  --theme-bg-footer: #F5B7D2;
+  --theme-color-black: rgb(0, 0, 0);
+  --theme-color-title: rgb(70, 51, 51);
+  --theme-color-footer: rgb(235, 212, 212);
+  --theme-bg-body: rgb(243, 225, 225);
+  --theme-bg-footer: rgb(131, 88, 88);
   --theme-color-title: rgb(70, 51, 51);
   --theme-bg-card: rgba(133 133 133 / 0.1);
   --theme-nav-text: rgba(255 255 255 / 1);
   --theme-color-: rgb(125, 90, 90);
-  --theme-color: rgb(241, 209, 209);
+  --theme-color: rgba(241, 209, 209, 0.5);
   --theme-color-: rgb(243, 225, 225);
   --theme-color-bg: rgb(250, 242, 242);
   --theme-color-: rgb(255, 240, 240);

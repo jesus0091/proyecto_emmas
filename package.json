@@ -7,5 +7,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesus0091/proyecto_emmas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jesus0091/proyecto_emmas/issues"
+  },
+  "homepage": "https://github.com/jesus0091/proyecto_emmas#readme",
   "description": ""
 }

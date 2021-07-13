@@ -5,69 +5,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!-------------------------------------------------- Bootstrap V4.6 ------------------------------------------------>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
-    </script>
-
-
-
+    <!-------------------------------------------------- Google Fonts -------------------------------------------------->
+    <!-----Pacific------------>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@900&family=Dancing+Script:wght@700&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&family=Blinker:wght@900&family=Dancing+Script:wght@700&family=Handlee&display=swap"
-        rel="stylesheet">
-
-
-
-
-
-    <!-----Lato------------>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <!-----Roboto---------->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <!----------------------------------------------------Fontawesome--------------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--------------------------------------------------- Google Api --------------------------------------------------->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--------------------------------------------------- Fontawesome -------------------------------------------------->
     <script src="https://kit.fontawesome.com/c03ef37cb0.js" crossorigin="anonymous"></script>
     <!--------------------------------------------------- Data AOS ----------------------------------------------------->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--------------------------------------------------- Animate CSS -------------------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!--------------------------------------------------- Style CSS ---------------------------------------------------->
     <link rel="stylesheet" href="css/style.css">
     <!------------------------------------------------------------------------------------------------------------------>
-    <title>Emma's</title>
+    <title>Emma's | Endulza tu día</title>
     <!------------------------------------------------------------------------------------------------------------------>
 </head>
 
 <body>
     <header class="container-fluid m-0 p-0 fixed-top">
-        <nav class="navbar navbar-expand-lg container navbar-emmas">
+        <nav class="navbar navbar-expand-lg container navbar-emmas animate__animated animate__fadeInDown">
             <a class="navbar-brand" href="#/home"><img src="img/logo_emma.png" alt="Logo Emma's"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#/home" active>Inicio</a>
+                        <a class="nav-link" href="#home" active>Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#/about">Quienes somos</a>
+                        <a class="nav-link" href="#about">Quienes somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#/buy">Cómo comprar</a>
+                        <a class="nav-link" href="#buy">Cómo comprar</a>
                     </li>
                 </ul>
             </div>
@@ -75,8 +57,9 @@
     </header>
     <div class="jumbo-tron">
         <div class="header-text">
-
-
+            <h1>EMMA'S</h1>
+            <p>para endulzar tu día</p>
+            <h2 class="titulo text-white">para endulzar tu día <br> con <span class="typed"></span></h2>
         </div>
         <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 100%; width: 100%;">
@@ -85,25 +68,178 @@
             </svg>
         </div>
     </div>
-
-
-    <!-- Renderizacion de elementos -->
-    <div class="py-5" id="app">
+    <!--------------------------------------------------- Section 1 ---------------------------------------------------->
+    <div class="">
+        <div class="container emmas-home" id="home">
+            <h2>Nuestros Productos</h2>
+            <div class="row py-5 my-5">
+                <div class="col-6 d-flex justify-content-center position-relative" data-aos="fade-right">
+                    <div>
+                        <img class="svg_brownie" src="/img/blob-2.svg" alt="">
+                        <img class="img_brownie" src="/img/brownie.png" alt="Image of Brownies">
+                    </div>
+                </div>
+                <div class="col-4 d-flex align-items-center" data-aos="fade-left">
+                    <div class="card">
+                        <div class="card-title">
+                            <h3>Brownies</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                Deliciosos brownies melcochudos con topping a elección.
+                            </p>
+                            <p class="text-secondary">
+                                <span>Toppings:</span> grageas (colores a elección),
+                                chin-chin, pecanas y todo lo que quieras.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5 my-5">
+                <div class="col-6 d-flex justify-content-center order-1 position-relative" data-aos="fade-left">
+                    <div>
+                        <img class="svg_chocoteja" src="/img/blob-1.svg" alt="">
+                        <img class="img_chocoteja" src="/img/chocoteja.png" alt="">
+                    </div>
+                </div>
+                <div class="col-4 ml-auto d-flex align-items-center" data-aos="fade-right">
+                    <div class="card text-right">
+                        <div class="card-title">
+                            <h3>Chocotejas</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Deliciosos brownies melcochudos con topping a elección.</p>
+                            <p class="text-secondary"><span>Toppings:</span> grageas (colores a elección),
+                                chin-chin, pecanas y todo lo que quieras.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5 my-5">
+                <div class="col-6 d-flex justify-content-end position-relative" data-aos="fade-right">
+                    <div>
+                        <img class="svg_alfajor" src="/img/blob-3.svg" alt="">
+                        <img class="img_alfajor" src="/img/alfajor.png" alt="">
+                    </div>
+                </div>
+                <div class="col-4 d-flex align-items-center" data-aos="fade-left">
+                    <div class="card">
+                        <div class="card-title">
+                            <h3>Alfajores</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                Alfajores de maicena clásicos
+                            </p>
+                            <p class="text-secondary">
+                                También pueden ser bañados en chocolate bitter o chocolate blanco.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- Renderizacion de elementos -->
-
-
-    <footer class="">
-
-        <div style="height: 100px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C148.70,83.38 308.96,-40.97 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
-                    style="stroke: none; fill: rgb(250, 242, 242);"></path>
-            </svg></div>
+    <!--------------------------------------------------- Section 2 ---------------------------------------------------->
+    <section class="spikes"></section>
+    <div class="bg-brown py-5 my-5">
+        <div class="container emmas-about ">
+            <h2 class="pt-4">Nosotros</h2>
+            <div class="row py-5 card">
+                <div class="col-6">
+                    <div class="card-img position-relative bg-yellow">
+                        <div class="video-frame ">
+                            <svg class="position-absolute svg_1" viewBox="0 0 500 500"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="100%" id="blobSvg">
+                                <path id="blob"
+                                    d="M436,340.5Q394,431,299,440.5Q204,450,122,400.5Q40,351,55.5,257.5Q71,164,139,112.5Q207,61,301.5,64Q396,67,437,158.5Q478,250,436,340.5Z"
+                                    fill="none" stroke-width="7px" stroke="rgb(131, 88, 88)"></path>
+                            </svg>
+                            <svg class="position-absolute svg_2" viewBox="0 0 500 500"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="100%" id="blobSvg">
+                                <defs>
+                                    <clipPath id="shape">
+                                        <path id="blob"
+                                            d="M436,340.5Q394,431,299,440.5Q204,450,122,400.5Q40,351,55.5,257.5Q71,164,139,112.5Q207,61,301.5,64Q396,67,437,158.5Q478,250,436,340.5Z"
+                                            fill="#d1d8e0"></path>
+                                    </clipPath>
+                                </defs>
+                                <image x="0" y="0" width="" height="100%" clip-path="url(#shape)"
+                                    xlink:href="/img/para_header.jpg" preserveAspectRatio="none"></image>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 d-flex justify-content-center flex-column">
+                    <div class="card-title d-inline-block">
+                        <h3>Hecho en <span>Familia</span></h3>
+                    </div>
+                    <div class="card-description">
+                        <p>¡Hola! Te presentamos nuestro emprendimiento familiar.
+                            Elaboramos alfajores, chocotejas y brownies.
+                            Nuestro objetivo es hacer que los postres sean
+                            la mejor parte de tus momentos.
+                            Por eso día a día nos esforzamos en hacer cada producto
+                            con el empeño que se merece y así lograr que ustedes
+                            se sumen a nosotras.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------------------------- Section 3 ---------------------------------------------------->
+    <section class="spikes-2"></section>
+    <div class="emmas-buy container py-5 my-5">
+        <h2>¿Cómo comprar?</h2>
+        <div class="row">
+            <div class="col-4 " data-aos="fade-up" data-aos-duration="500">
+                <div class="card bg-pink">
+                    <div class="card-img">
+                        <img src="../img/icons/step-1.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p>Elige el producto que más te guste</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 " data-aos="fade-up" data-aos-duration="1000">
+                <div class="card bg-yellow">
+                    <div class="card-img ">
+                        <img class="" src="../img/icons/step-2.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p>Armalo a tu gusto</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 " data-aos="fade-up" data-aos-duration="1500">
+                <div class="card bg-green">
+                    <div class="card-img">
+                        <img src="../img/icons/step-3.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <p>Envianos tu pedido por WhatsApp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------------------------------------------------------------------------>
+    <!--------------------------------------------------- Footer ------------------------------------------------------->
+    <footer class="position-relative">
+        <div style="height: 150px; overflow: hidden; position: absolute; width: 100%; bottom: 140px;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M-22.86,93.25 C222.06,228.45 342.26,20.22 536.40,155.42 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: rgb(131, 88, 88);"></path>
+            </svg>
+        </div>
         <div class="container">
-            <div class="row">
+            <div class="row pb-2 f-margin">
                 <div class="col-3 d-flex align-items-center">
-                    <img src="img/logo_emma.png" alt="">
+                    <img src="img/logo_emmas.png" alt="">
                 </div>
                 <div class="col-3">
                     <h3>Enlaces</h3>
@@ -150,17 +286,43 @@
                 </div>
                 <div class="col-3">
                     <h3>Contacto</h3>
+                    <div class="nav-bottom">
+                        <div class="popup-whatsapp fadeIn">
+                            <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                                    <i class="material-icons icon-font-color">close</i>
+                                </button>
+                                <p>¡Hola, 😊 necesitas ayuda?</p>
+                            </div>
+                            <div class="content-whatsapp -bottom">
+                                <input class="whats-input" id="whats-in" type="text" Placeholder="Envíame tu pedido..." />
+                                <button class="send-msPopup" id="send-btn" type="button">
+                                    <i class="material-icons icon-font-color--black">send</i>
+                                </button>
 
-
+                            </div>
+                        </div>
+                        <button type="button" id="whats-openPopup" class="whatsapp-button">
+                            <span class="icon-whatsapp"><i class="fab fa-whatsapp"></i></span>
+                        </button>
+                        <div class="circle-anime"></div>
+                    </div>
                 </div>
             </div>
         </div>
-
     </footer>
+    <!--------------------------------------------------- Bootstrap V4.6 ----------------------------------------------->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+    <!--------------------------------------------------- Data AOS ----------------------------------------------------->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <!--------------------------------------------------- Script's ----------------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="./router/router.js"></script>
     <script src="./index.js"></script>
 </body>

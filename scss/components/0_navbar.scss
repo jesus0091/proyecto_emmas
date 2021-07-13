@@ -1,10 +1,16 @@
 @import '5_variables.scss';
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
 header {
-    // height: 100%;
     background-color: rgba(0 0 0 / 0.1);
     backdrop-filter: blur(5px);
-    // z-index: 1;
 
     img {
         width: 75px;
@@ -12,11 +18,18 @@ header {
     }
 
     nav {
+        ul {
 
-        a {
-            color: var(--theme-nav-text);
-            font-size: 1rem;
-
+            a { 
+                display: flex;
+                background: var(--theme-bg-body);
+                border-radius: 50px;
+                padding: 0px 10px !important;
+                margin: 5px;
+                color: var(--theme-bg-footer);
+                font-size: 1.15rem;
+    
+            }
         }
     }
 
@@ -25,7 +38,7 @@ header {
 .jumbo-tron {
     margin: 0;
     padding: 0;
-    height: 600px;
+    height: 100vh;
     background-image: url(../img/Banner.jpg);
     background-size: cover;
     background-attachment: fixed;
