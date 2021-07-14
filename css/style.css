@@ -1,11 +1,10 @@
 :root {
   --theme-color-white: #ffffff;
   --theme-color-black: rgb(0, 0, 0);
-  --theme-color-title: rgb(70, 51, 51);
+  --theme-color-title: #452103;
   --theme-color-footer: rgb(235, 212, 212);
   --theme-bg-body: rgb(243, 225, 225);
-  --theme-bg-footer: rgb(131, 88, 88);
-  --theme-color-title: rgb(70, 51, 51);
+  --theme-bg-footer: #452103;
   --theme-bg-card: rgba(133 133 133 / 0.1);
   --theme-nav-text: rgba(255 255 255 / 1);
   --theme-color-: rgb(125, 90, 90);
@@ -38,10 +37,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-header {
-  background-color: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-}
 header img {
   width: 75px;
   border-radius: 100px;
@@ -60,7 +55,7 @@ header nav ul a {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-image: url(../img/Banner.jpg);
+  background-image: url(../img/banner-2.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -80,14 +75,40 @@ header nav ul a {
   bottom: 0;
 }
 
+.name_page {
+  font-family: "Aloja", sans-serif;
+  font-size: 6rem;
+  color: var(--theme-bg-footer);
+  margin: 0;
+  font-weight: bold;
+}
+@media only screen and (max-width: 578px) {
+  .name_page {
+    font-size: 3rem;
+  }
+}
+
+.slogan-page {
+  color: var(--theme-bg-footer);
+}
+.slogan-page span {
+  font-weight: normal;
+  text-decoration: none;
+  color: #ca2e55;
+}
+@media only screen and (max-width: 578px) {
+  .slogan-page {
+    font-size: 1.5rem;
+  }
+}
+
 :root {
   --theme-color-white: #ffffff;
   --theme-color-black: rgb(0, 0, 0);
-  --theme-color-title: rgb(70, 51, 51);
+  --theme-color-title: #452103;
   --theme-color-footer: rgb(235, 212, 212);
   --theme-bg-body: rgb(243, 225, 225);
-  --theme-bg-footer: rgb(131, 88, 88);
-  --theme-color-title: rgb(70, 51, 51);
+  --theme-bg-footer: #452103;
   --theme-bg-card: rgba(133 133 133 / 0.1);
   --theme-nav-text: rgba(255 255 255 / 1);
   --theme-color-: rgb(125, 90, 90);
@@ -115,8 +136,14 @@ body {
 
 .emmas-home h2 {
   text-align: center;
-  font-family: "Pacifico", cursive;
+  font-family: "Aloja", cursive;
   font-size: 3.5rem;
+  color: var(--theme-bg-footer);
+}
+@media only screen and (max-width: 578px) {
+  .emmas-home h2 {
+    font-size: 1.75rem;
+  }
 }
 .emmas-home .img-card {
   display: flex;
@@ -126,14 +153,29 @@ body {
 .emmas-home .img_brownie {
   height: 17rem;
 }
+@media only screen and (max-width: 578px) {
+  .emmas-home .img_brownie {
+    height: 9rem;
+  }
+}
 .emmas-home .svg_brownie {
   position: absolute;
   transform: translate(-30%, -30%);
   z-index: -1;
   height: 600px;
 }
+@media only screen and (max-width: 578px) {
+  .emmas-home .svg_brownie {
+    height: 300px;
+  }
+}
 .emmas-home .img_chocoteja {
   height: 23rem;
+}
+@media only screen and (max-width: 578px) {
+  .emmas-home .img_chocoteja {
+    height: 11rem;
+  }
 }
 .emmas-home .svg_chocoteja {
   position: absolute;
@@ -141,14 +183,29 @@ body {
   z-index: -1;
   height: 600px;
 }
+@media only screen and (max-width: 578px) {
+  .emmas-home .svg_chocoteja {
+    height: 300px;
+  }
+}
 .emmas-home .img_alfajor {
   height: 18rem;
+}
+@media only screen and (max-width: 578px) {
+  .emmas-home .img_alfajor {
+    height: 8rem;
+  }
 }
 .emmas-home .svg_alfajor {
   position: absolute;
   transform: translate(-30%, -35%);
   z-index: -1;
   height: 600px;
+}
+@media only screen and (max-width: 578px) {
+  .emmas-home .svg_alfajor {
+    height: 300px;
+  }
 }
 .emmas-home .card {
   background: none;
@@ -157,7 +214,7 @@ body {
   justify-content: center;
 }
 .emmas-home .card h3 {
-  font-family: "Pacifico", cursive;
+  font-family: "Aloja", cursive;
   font-size: 3.5rem;
   color: var(--theme-color-title);
 }
@@ -175,15 +232,28 @@ body {
   font-size: 1rem;
   font-weight: bold;
 }
+@media only screen and (max-width: 578px) {
+  .emmas-home .card h3 {
+    font-size: 1.75rem;
+  }
+  .emmas-home .card .card-body p {
+    font-size: 0.85rem;
+  }
+  .emmas-home .card .card-body .text-secondary {
+    font-size: 0.75rem;
+  }
+  .emmas-home .card .card-body .text-secondary span {
+    font-size: 0.75rem;
+  }
+}
 
 :root {
   --theme-color-white: #ffffff;
   --theme-color-black: rgb(0, 0, 0);
-  --theme-color-title: rgb(70, 51, 51);
+  --theme-color-title: #452103;
   --theme-color-footer: rgb(235, 212, 212);
   --theme-bg-body: rgb(243, 225, 225);
-  --theme-bg-footer: rgb(131, 88, 88);
-  --theme-color-title: rgb(70, 51, 51);
+  --theme-bg-footer: #452103;
   --theme-bg-card: rgba(133 133 133 / 0.1);
   --theme-nav-text: rgba(255 255 255 / 1);
   --theme-color-: rgb(125, 90, 90);
@@ -216,10 +286,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-header {
-  background-color: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-}
 header img {
   width: 75px;
   border-radius: 100px;
@@ -238,7 +304,7 @@ header nav ul a {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-image: url(../img/Banner.jpg);
+  background-image: url(../img/banner-2.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -258,13 +324,45 @@ header nav ul a {
   bottom: 0;
 }
 
+.name_page {
+  font-family: "Aloja", sans-serif;
+  font-size: 6rem;
+  color: var(--theme-bg-footer);
+  margin: 0;
+  font-weight: bold;
+}
+@media only screen and (max-width: 578px) {
+  .name_page {
+    font-size: 3rem;
+  }
+}
+
+.slogan-page {
+  color: var(--theme-bg-footer);
+}
+.slogan-page span {
+  font-weight: normal;
+  text-decoration: none;
+  color: #ca2e55;
+}
+@media only screen and (max-width: 578px) {
+  .slogan-page {
+    font-size: 1.5rem;
+  }
+}
+
 .emmas-about h2 {
   text-align: center;
-  font-family: "Pacifico", cursive;
+  font-family: "Aloja", cursive;
   font-size: 3.5rem;
   color: var(--theme-color-bg);
   letter-spacing: 0.5;
   font-weight: lighter;
+}
+@media only screen and (max-width: 578px) {
+  .emmas-about h2 {
+    font-size: 1.75rem;
+  }
 }
 .emmas-about .card {
   background: none;
@@ -307,7 +405,7 @@ header nav ul a {
   font-weight: bolder;
 }
 .emmas-about .card .card-title h3 span {
-  font-family: "Pacifico", sans-serif;
+  font-family: "Aloja", sans-serif;
   color: var(--theme-bg-footer);
   font-size: 2.15rem;
   font-weight: normal;
@@ -323,14 +421,78 @@ header nav ul a {
   background: var(--theme-bg-footer);
 }
 
+@media only screen and (max-width: 578px) {
+  .emmas-about h2 {
+    text-align: center;
+    font-family: "Aloja", cursive;
+    font-size: 3.5rem;
+    color: var(--theme-color-bg);
+    letter-spacing: 0.5;
+    font-weight: lighter;
+  }
+}
+@media only screen and (max-width: 578px) and (max-width: 578px) {
+  .emmas-about h2 {
+    font-size: 1.75rem;
+  }
+}
+@media only screen and (max-width: 578px) {
+  .emmas-about .card {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: row;
+  }
+  .emmas-about .card .card-img {
+    display: flex;
+    align-items: center;
+    min-height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .emmas-about .card .video-frame {
+    border-radius: 10px;
+    overflow: hidden;
+    height: max-content;
+  }
+  .emmas-about .card .video-frame svg {
+    height: 530px;
+    top: -125px;
+  }
+  .emmas-about .card .video-frame .svg_1 {
+    height: 560px;
+    z-index: 1;
+  }
+  .emmas-about .card .video_media {
+    height: 300px;
+  }
+  .emmas-about .card .card-title {
+    width: max-content;
+    background: var(--theme-color-white);
+    padding: 10px;
+    transform: translate(50%, -20%);
+    border-radius: 15px;
+    z-index: 1;
+  }
+  .emmas-about .card .card-title h3 {
+    font-size: 1rem;
+    font-weight: bolder;
+    margin: 0;
+  }
+  .emmas-about .card .card-title h3 span {
+    font-size: 0.85rem;
+  }
+  .emmas-about .card .card-description p {
+    font-size: 0.85rem;
+  }
+}
 :root {
   --theme-color-white: #ffffff;
   --theme-color-black: rgb(0, 0, 0);
-  --theme-color-title: rgb(70, 51, 51);
+  --theme-color-title: #452103;
   --theme-color-footer: rgb(235, 212, 212);
   --theme-bg-body: rgb(243, 225, 225);
-  --theme-bg-footer: rgb(131, 88, 88);
-  --theme-color-title: rgb(70, 51, 51);
+  --theme-bg-footer: #452103;
   --theme-bg-card: rgba(133 133 133 / 0.1);
   --theme-nav-text: rgba(255 255 255 / 1);
   --theme-color-: rgb(125, 90, 90);
@@ -357,12 +519,17 @@ body {
 }
 
 .emmas-buy h2 {
-  font-family: "Pacifico", sans-serif;
+  font-family: "Aloja", sans-serif;
   text-align: center;
   font-size: 3.5rem;
   letter-spacing: 0.5px;
   color: var(--theme-color-title);
   margin-bottom: 50px;
+}
+@media only screen and (max-width: 578px) {
+  .emmas-buy h2 {
+    font-size: 1.75rem;
+  }
 }
 .emmas-buy .card {
   border-radius: 15px;
@@ -378,15 +545,32 @@ body {
 .emmas-buy .card .card-img img {
   height: 150px;
 }
+@media only screen and (max-width: 578px) {
+  .emmas-buy .card .card-img {
+    padding: 10px;
+  }
+  .emmas-buy .card .card-img img {
+    height: 85px;
+  }
+}
 .emmas-buy .card .card-body p {
   text-align: center;
   font-size: 1.5rem;
   font-weight: lighter;
   line-height: 1.15;
 }
-
+@media only screen and (max-width: 578px) {
+  .emmas-buy .card .card-body p {
+    font-size: 0.75rem;
+    font-weight: normal;
+  }
+}
+.emmas-buy .card:hover {
+  transform: scale(1.02);
+  transition: 0.25s ease all;
+}
 .bg-pink {
-  background-color: rgba(255, 192, 203, 0.2);
+  background-color: rgba(34, 162, 221, 0.3);
 }
 
 .bg-yellow {
@@ -394,7 +578,7 @@ body {
 }
 
 .bg-green {
-  background-color: rgba(0, 255, 127, 0.2);
+  background-color: rgba(244, 91, 105, 0.3);
 }
 
 .spikes {
@@ -435,14 +619,73 @@ body {
   background-position: 0 0;
 }
 
+@media only screen and (max-width: 578px) {
+  .emmas-buy h2 {
+    font-size: 1.75rem;
+  }
+  .emmas-buy .card {
+    min-height: 11rem;
+  }
+  .emmas-buy .card .card-img {
+    padding: 10px;
+  }
+  .emmas-buy .card .card-img img {
+    height: 85px;
+  }
+  .emmas-buy .card .card-body {
+    padding: 10px;
+  }
+  .emmas-buy .card .card-body p {
+    font-size: 0.85rem;
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+
+  .spikes {
+    position: relative;
+    height: 0px;
+  }
+
+  .spikes::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0%;
+    top: 100%;
+    z-index: 3;
+    display: block;
+    height: 50px;
+    background-size: 50px 100%;
+    background-image: linear-gradient(135deg, var(--theme-color-bg) 25%, transparent 25%), linear-gradient(225deg, var(--theme-color-bg) 25%, transparent 25%);
+    background-position: 0 0;
+  }
+
+  .spikes-2 {
+    position: relative;
+    height: 0px;
+  }
+
+  .spikes-2::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0%;
+    bottom: 100%;
+    z-index: 3;
+    display: block;
+    height: 50px;
+    background-size: 50px 100%;
+    background-image: linear-gradient(135deg, var(--theme-bg-footer) 25%, transparent 25%), linear-gradient(225deg, var(--theme-bg-footer) 25%, transparent 25%);
+    background-position: 0 0;
+  }
+}
 :root {
   --theme-color-white: #ffffff;
   --theme-color-black: rgb(0, 0, 0);
-  --theme-color-title: rgb(70, 51, 51);
+  --theme-color-title: #452103;
   --theme-color-footer: rgb(235, 212, 212);
   --theme-bg-body: rgb(243, 225, 225);
-  --theme-bg-footer: rgb(131, 88, 88);
-  --theme-color-title: rgb(70, 51, 51);
+  --theme-bg-footer: #452103;
   --theme-bg-card: rgba(133 133 133 / 0.1);
   --theme-nav-text: rgba(255 255 255 / 1);
   --theme-color-: rgb(125, 90, 90);
@@ -783,11 +1026,10 @@ input.whats-input[type=text]:focus {
 :root {
   --theme-color-white: #ffffff;
   --theme-color-black: rgb(0, 0, 0);
-  --theme-color-title: rgb(70, 51, 51);
+  --theme-color-title: #452103;
   --theme-color-footer: rgb(235, 212, 212);
   --theme-bg-body: rgb(243, 225, 225);
-  --theme-bg-footer: rgb(131, 88, 88);
-  --theme-color-title: rgb(70, 51, 51);
+  --theme-bg-footer: #452103;
   --theme-bg-card: rgba(133 133 133 / 0.1);
   --theme-nav-text: rgba(255 255 255 / 1);
   --theme-color-: rgb(125, 90, 90);
@@ -1150,6 +1392,11 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+@font-face {
+  font-family: Aloja;
+  src: url(/fonts/Aloja-Light.otf);
 }
 
 /*# sourceMappingURL=style.css.map */

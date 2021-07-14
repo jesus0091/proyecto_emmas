@@ -4,11 +4,15 @@
 
     h2 {
         text-align: center;
-        font-family: 'Pacifico', cursive;
+        font-family: 'Aloja', cursive;
         font-size: 3.5rem;
         color: var(--theme-color-bg);
         letter-spacing: 0.5;
         font-weight: lighter;
+
+        @media only screen and (max-width: 578px) {
+            font-size: 1.75rem;
+        }
     }
     
     .card {
@@ -53,7 +57,7 @@
                 font-weight: bolder;
 
                 span {
-                    font-family: 'Pacifico', sans-serif;
+                    font-family: 'Aloja', sans-serif;
                     color: var(--theme-bg-footer);
                     font-size: 2.15rem;
                     font-weight: normal;
@@ -78,4 +82,81 @@
 }
 .bg-brown {
     background: var(--theme-bg-footer);
+}
+
+@media only screen and (max-width: 578px) {
+    .emmas-about {
+
+        h2 {
+            text-align: center;
+            font-family: 'Aloja', cursive;
+            font-size: 3.5rem;
+            color: var(--theme-color-bg);
+            letter-spacing: 0.5;
+            font-weight: lighter;
+    
+            @media only screen and (max-width: 578px) {
+                font-size: 1.75rem;
+            }
+        }
+        
+        .card {
+            background: none;
+            border: none;
+            display: flex;
+            flex-direction: row;
+    
+            .card-img{
+                display: flex;
+                align-items: center;
+                min-height: 300px;
+                border-radius: 15px;
+                overflow: hidden;
+            }
+            .video-frame{
+                border-radius: 10px;
+                overflow: hidden;
+                height: max-content;
+    
+                svg{
+                    height: 530px;
+                    top: -125px;
+                }
+                .svg_1 {
+                    height: 560px;
+                    z-index: 1;
+                }
+            }
+            .video_media{
+                height: 300px;
+            }
+            .card-title {
+                width: max-content;
+                background: var(--theme-color-white);
+                padding: 10px;
+                transform: translate(50%, -20%);
+                border-radius: 15px;
+                z-index: 1;
+    
+                h3 {
+                    font-size: 1rem;
+                    font-weight: bolder;
+                    margin: 0;
+                    span {
+                        font-size: .85rem;
+                    }
+                }
+            }
+    
+            .card-description {
+                p {
+                    font-size: .85rem;
+                }
+            }
+    
+        }
+    
+    
+    
+    }
 }

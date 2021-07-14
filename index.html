@@ -9,14 +9,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
     <!-------------------------------------------------- Google Fonts -------------------------------------------------->
-    <!-----Pacific------------>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <!-----Roboto---------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <!--------------------------------------------------- Google Api --------------------------------------------------->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--------------------------------------------------- Fontawesome -------------------------------------------------->
@@ -32,7 +29,7 @@
     <!------------------------------------------------------------------------------------------------------------------>
 </head>
 
-<body>
+<body class="">
     <header class="container-fluid m-0 p-0 fixed-top">
         <nav class="navbar navbar-expand-lg container navbar-emmas animate__animated animate__fadeInDown">
             <a class="navbar-brand" href="#/home"><img src="img/logo_emma.png" alt="Logo Emma's"></a>
@@ -56,10 +53,9 @@
         </nav>
     </header>
     <div class="jumbo-tron">
-        <div class="header-text">
-            <h1>EMMA'S</h1>
-            <p>para endulzar tu día</p>
-            <h2 class="titulo text-white">para endulzar tu día <br> con <span class="typed"></span></h2>
+        <div class="col-md-4 offset-md-4 d-flex flex-column justify-content-center header-text">
+            <h1 class="name_page">EMMA'S</h1>
+            <h2 class="slogan-page">para endulzar tu día <br> con <span class="typed"></span></h2>
         </div>
         <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 100%; width: 100%;">
@@ -69,17 +65,17 @@
         </div>
     </div>
     <!--------------------------------------------------- Section 1 ---------------------------------------------------->
-    <div class="">
+    <div class="overflow-hidden">
         <div class="container emmas-home" id="home">
-            <h2>Nuestros Productos</h2>
-            <div class="row py-5 my-5">
+            <h2 class="mb-5 m-md-0" data-aos="flip-up" data-aos-duration="750">Nuestros Productos</h2>
+            <div class="row py-4 my-4 py-md-5 my-md-5">
                 <div class="col-6 d-flex justify-content-center position-relative" data-aos="fade-right">
                     <div>
                         <img class="svg_brownie" src="img/blob-2.svg" alt="">
                         <img class="img_brownie" src="img/brownie.png" alt="Image of Brownies">
                     </div>
                 </div>
-                <div class="col-4 d-flex align-items-center" data-aos="fade-left">
+                <div class="col-6 col-md-4 d-flex align-items-center" data-aos="fade-left">
                     <div class="card">
                         <div class="card-title">
                             <h3>Brownies</h3>
@@ -96,14 +92,14 @@
                     </div>
                 </div>
             </div>
-            <div class="row py-5 my-5">
+            <div class="row py-4 my-4 py-md-5 my-md-5">
                 <div class="col-6 d-flex justify-content-center order-1 position-relative" data-aos="fade-left">
                     <div>
                         <img class="svg_chocoteja" src="img/blob-1.svg" alt="">
                         <img class="img_chocoteja" src="img/chocoteja.png" alt="">
                     </div>
                 </div>
-                <div class="col-4 ml-auto d-flex align-items-center" data-aos="fade-right">
+                <div class="col-6 col-md-4 ml-auto d-flex align-items-center" data-aos="fade-right">
                     <div class="card text-right">
                         <div class="card-title">
                             <h3>Chocotejas</h3>
@@ -116,14 +112,14 @@
                     </div>
                 </div>
             </div>
-            <div class="row py-5 my-5">
+            <div class="row py-4 my-4 py-md-5 my-md-5">
                 <div class="col-6 d-flex justify-content-end position-relative" data-aos="fade-right">
                     <div>
                         <img class="svg_alfajor" src="img/blob-3.svg" alt="">
                         <img class="img_alfajor" src="img/alfajor.png" alt="">
                     </div>
                 </div>
-                <div class="col-4 d-flex align-items-center" data-aos="fade-left">
+                <div class="col-6 col-md-4 d-flex align-items-center" data-aos="fade-left">
                     <div class="card">
                         <div class="card-title">
                             <h3>Alfajores</h3>
@@ -143,12 +139,12 @@
     </div>
     <!--------------------------------------------------- Section 2 ---------------------------------------------------->
     <section class="spikes"></section>
-    <div class="bg-brown py-5 my-5">
+    <div class="bg-brown py-5 my-5 overflow-hidden" id="about">
         <div class="container emmas-about ">
-            <h2 class="pt-4">Nosotros</h2>
-            <div class="row py-5 card">
-                <div class="col-6">
-                    <div class="card-img position-relative bg-yellow">
+            <h2 class="pt-4" data-aos="flip-up" data-aos-duration="750">Nosotros</h2>
+            <div class="row py-md-5 card">
+                <div class="col-md-6">
+                    <div class="card-img position-relative">
                         <div class="video-frame ">
                             <svg class="position-absolute svg_1" viewBox="0 0 500 500"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -168,7 +164,7 @@
                                     </clipPath>
                                 </defs>
                                 <image x="0" y="0" width="" height="100%" clip-path="url(#shape)"
-                                    xlink:href="img/para_header.jpg" preserveAspectRatio="none"></image>
+                                    xlink:href="img/banner-4.jpg" preserveAspectRatio="none"></image>
                             </svg>
                         </div>
                     </div>
@@ -177,7 +173,7 @@
                     <div class="card-title d-inline-block">
                         <h3>Hecho en <span>Familia</span></h3>
                     </div>
-                    <div class="card-description">
+                    <div class="d-none card-description">
                         <p>¡Hola! Te presentamos nuestro emprendimiento familiar.
                             Elaboramos alfajores, chocotejas y brownies.
                             Nuestro objetivo es hacer que los postres sean
@@ -187,15 +183,24 @@
                             se sumen a nosotras.</p>
                     </div>
                 </div>
+                <div class=" col-12 d-md-none card-description">
+                    <p>¡Hola! Te presentamos nuestro emprendimiento familiar.
+                        Elaboramos alfajores, chocotejas y brownies.
+                        Nuestro objetivo es hacer que los postres sean
+                        la mejor parte de tus momentos.
+                        Por eso día a día nos esforzamos en hacer cada producto
+                        con el empeño que se merece y así lograr que ustedes
+                        se sumen a nosotras.</p>
+                </div>
             </div>
         </div>
     </div>
     <!--------------------------------------------------- Section 3 ---------------------------------------------------->
     <section class="spikes-2"></section>
-    <div class="emmas-buy container py-5 my-5">
-        <h2>¿Cómo comprar?</h2>
-        <div class="row">
-            <div class="col-4 " data-aos="fade-up" data-aos-duration="500">
+    <div class="emmas-buy container py-5 my-5 overflow-hidden p-1" id="buy">
+        <h2 data-aos="flip-up" data-aos-duration="750">Como comprar?</h2>
+        <div class="row m-0">
+            <div class="col-4 p-1" data-aos="fade-up" data-aos-duration="500">
                 <div class="card bg-pink">
                     <div class="card-img">
                         <img src="img/icons/step-1.png" alt="">
@@ -205,7 +210,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 " data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-4 p-1" data-aos="fade-up" data-aos-duration="1000">
                 <div class="card bg-yellow">
                     <div class="card-img ">
                         <img class="" src="img/icons/step-2.png" alt="">
@@ -215,7 +220,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 " data-aos="fade-up" data-aos-duration="1500">
+            <div class="col-4 p-1" data-aos="fade-up" data-aos-duration="1500">
                 <div class="card bg-green">
                     <div class="card-img">
                         <img src="img/icons/step-3.png" alt="">
@@ -233,7 +238,7 @@
         <div style="height: 150px; overflow: hidden; position: absolute; width: 100%; bottom: 140px;">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
                 <path d="M-22.86,93.25 C222.06,228.45 342.26,20.22 536.40,155.42 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: rgb(131, 88, 88);"></path>
+                    style="stroke: none; fill: #452103;"></path>
             </svg>
         </div>
         <div class="container">
@@ -241,7 +246,7 @@
                 <div class="col-3 d-flex align-items-center">
                     <img src="img/logo_emmas.png" alt="">
                 </div>
-                <div class="col-3">
+                <div class="col-3 d-none">
                     <h3>Enlaces</h3>
                     <ul class="">
                         <li class="nav-item active">
@@ -255,7 +260,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-3">
+                <div class="col-3 d-none">
                     <h3>Siguenos</h3>
                     <div class="share-buttons">
                         <a class="mb-2" href="">
@@ -294,7 +299,8 @@
                                 <p>¡Hola, 😊 necesitas ayuda?</p>
                             </div>
                             <div class="content-whatsapp -bottom">
-                                <input class="whats-input" id="whats-in" type="text" Placeholder="Envíame tu pedido..." />
+                                <input class="whats-input" id="whats-in" type="text"
+                                    Placeholder="Envíame tu pedido..." />
                                 <button class="send-msPopup" id="send-btn" type="button">
                                     <i class="material-icons icon-font-color--black">send</i>
                                 </button>
@@ -323,7 +329,7 @@
     </script>
     <!--------------------------------------------------- Script's ----------------------------------------------------->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <script src="./router/router.js"></script>
+    <script src="https://www.npmjs.com/package/simplex-noise"></script>
     <script src="./index.js"></script>
 </body>
 

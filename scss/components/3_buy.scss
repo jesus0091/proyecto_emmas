@@ -1,14 +1,18 @@
 @import '5_variables.scss';
 
 .emmas-buy {
-    
+
     h2 {
-        font-family: 'Pacifico', sans-serif;
+        font-family: 'Aloja', sans-serif;
         text-align: center;
         font-size: 3.5rem;
         letter-spacing: 0.5px;
         color: var(--theme-color-title);
         margin-bottom: 50px;
+
+        @media only screen and (max-width: 578px) {
+            font-size: 1.75rem;
+        }
     }
 
     .card {
@@ -21,36 +25,62 @@
             justify-content: center;
             align-items: center;
             padding: 30px;
+
             img {
                 height: 150px;
             }
-        }
-        .card-body {
-            p{
-                text-align: center;
-                font-size: 1.5rem;
-                font-weight:lighter;
-                line-height: 1.15;
+
+            @media only screen and (max-width: 578px) {
+                padding: 10px;
+
+                img {
+                    height: 85px;
+                }
             }
         }
+
+        .card-body {
+            p {
+                text-align: center;
+                font-size: 1.5rem;
+                font-weight: lighter;
+                line-height: 1.15;
+
+                @media only screen and (max-width: 578px) {
+                    font-size: .75rem;
+                    font-weight: normal;
+                }
+            }
+        }
+
+        &:hover {
+            transform: scale(1.02);
+            transition: 0.25s ease all;
+        }
+
+        @media only screen and (max-width: 578px) {}
     }
 
 }
+
 .bg-pink {
-    background-color: rgba(pink, 0.2);
+    background-color: rgba(#22a2dd, 0.3);
 }
+
 .bg-yellow {
     background-color: rgba(yellow, 0.2);
 }
+
 .bg-green {
-    background-color: rgba( springgreen, 0.2);
+    background-color: rgba(#f45b69, 0.3);
 }
+
 .spikes {
     position: relative;
     height: 0px;
-  }
-  
-  .spikes::after {
+}
+
+.spikes::after {
     content: '';
     position: absolute;
     right: 0;
@@ -62,13 +92,14 @@
     background-size: 50px 100%;
     background-image: linear-gradient(135deg, var(--theme-color-bg) 25%, transparent 25%), linear-gradient(225deg, var(--theme-color-bg) 25%, transparent 25%);
     background-position: 0 0;
-  }
-  .spikes-2 {
+}
+
+.spikes-2 {
     position: relative;
     height: 0px;
-  }
-  
-  .spikes-2::after {
+}
+
+.spikes-2::after {
     content: '';
     position: absolute;
     right: 0;
@@ -80,4 +111,75 @@
     background-size: 50px 100%;
     background-image: linear-gradient(135deg, var(--theme-bg-footer) 25%, transparent 25%), linear-gradient(225deg, var(--theme-bg-footer) 25%, transparent 25%);
     background-position: 0 0;
-  }
+}
+
+@media only screen and (max-width: 578px) {
+    .emmas-buy {
+
+        h2 {
+            font-size: 1.75rem;
+        }
+    
+        .card {
+            min-height: 11rem;
+    
+            .card-img {
+                padding: 10px;
+    
+                img {
+                    height: 85px;
+                }
+            }
+    
+            .card-body {
+                padding: 10px;
+                p {
+                    font-size: 0.85rem;
+                    font-weight: normal;
+                    margin-bottom: 0;
+                }
+            }
+    
+        }
+    
+    }
+    
+    
+    .spikes {
+        position: relative;
+        height: 0px;
+    }
+    
+    .spikes::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        left: -0%;
+        top: 100%;
+        z-index: 3;
+        display: block;
+        height: 50px;
+        background-size: 50px 100%;
+        background-image: linear-gradient(135deg, var(--theme-color-bg) 25%, transparent 25%), linear-gradient(225deg, var(--theme-color-bg) 25%, transparent 25%);
+        background-position: 0 0;
+    }
+    
+    .spikes-2 {
+        position: relative;
+        height: 0px;
+    }
+    
+    .spikes-2::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        left: -0%;
+        bottom: 100%;
+        z-index: 3;
+        display: block;
+        height: 50px;
+        background-size: 50px 100%;
+        background-image: linear-gradient(135deg, var(--theme-bg-footer) 25%, transparent 25%), linear-gradient(225deg, var(--theme-bg-footer) 25%, transparent 25%);
+        background-position: 0 0;
+    }
+}

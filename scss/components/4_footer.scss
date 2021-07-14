@@ -1,38 +1,38 @@
 @import '5_variables.scss';
 
 footer {
-  background-color: var(--theme-bg-footer);
-  margin-top: 10rem;
+    background-color: var(--theme-bg-footer);
+    margin-top: 10rem;
 
-  .f-margin {
-      margin-top: -50px;
-  }
+    .f-margin {
+        margin-top: -50px;
+    }
 
-  img {
-      width: 7rem;
-  }
+    img {
+        width: 7rem;
+    }
 
-  h3 {
-      color: var(--theme-color-white);
-      font-family: 'Roboto', sans-serif;
-      font-weight: bold;
-      letter-spacing: 0.5px;
+    h3 {
+        color: var(--theme-color-white);
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        letter-spacing: 0.5px;
 
-  }
+    }
 
-  ul {
-      .nav-link {
-          padding: 0.15rem;
-          color: var(--theme-color-footer);
-          font-size: 1rem;
-          line-height: 1.25;
+    ul {
+        .nav-link {
+            padding: 0.15rem;
+            color: var(--theme-color-footer);
+            font-size: 1rem;
+            line-height: 1.25;
 
-          &:hover {
-              color: var(--theme-color-white);
-          }
+            &:hover {
+                color: var(--theme-color-white);
+            }
 
-      }
-  }
+        }
+    }
 }
 
 $button-height: 30px;
@@ -40,89 +40,89 @@ $box-width: 300px;
 $box-height: 212px;
 
 .share-buttons {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-  .share-button {
-      float: left;
-      margin-top: 15px;
+    .share-button {
+        float: left;
+        margin-top: 15px;
 
-      &:first-child {
-          margin-top: 0;
-      }
+        &:first-child {
+            margin-top: 0;
+        }
 
-      &:after {
-          clear: both;
-          display: table;
-      }
-  }
+        &:after {
+            clear: both;
+            display: table;
+        }
+    }
 }
 
 .share-button {
-  display: block;
-  position: relative;
-  height: $button-height;
+    display: block;
+    position: relative;
+    height: $button-height;
 
-  &:hover {
-      cursor: pointer;
+    &:hover {
+        cursor: pointer;
 
-      .share-button-primary {
-          box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.3);
-      }
+        .share-button-primary {
+            box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.3);
+        }
 
-      .share-button-secondary-content {
-          transform: translate3d(0, 0, 0);
-      }
-  }
+        .share-button-secondary-content {
+            transform: translate3d(0, 0, 0);
+        }
+    }
 }
 
 .share-button-primary {
-  position: absolute;
-  background: var(--theme-color-white);
-  width: $button-height;
-  height: $button-height;
-  text-align: center;
-  border-radius: ($button-height / 2);
-  left: 0;
-  top: 50%;
-  margin-top: -($button-height / 2);
+    position: absolute;
+    background: var(--theme-color-white);
+    width: $button-height;
+    height: $button-height;
+    text-align: center;
+    border-radius: ($button-height / 2);
+    left: 0;
+    top: 50%;
+    margin-top: -($button-height / 2);
 }
 
 .share-button-icon {
-  display: block;
-  color: var(--theme-color-title);
-  position: absolute;
-  width: $button-height;
-  line-height: $button-height;
-  font-size: 16px;
-  margin-top: 1px;
+    display: block;
+    color: var(--theme-color-title);
+    position: absolute;
+    width: $button-height;
+    line-height: $button-height;
+    font-size: 16px;
+    margin-top: 1px;
 }
 
 .share-button-secondary {
-  overflow: hidden;
-  margin-left: ($button-height / 2);
-  height: $button-height;
+    overflow: hidden;
+    margin-left: ($button-height / 2);
+    height: $button-height;
 }
 
 .share-button-secondary-content {
-  font-size: 1rem;
-  background: var(--theme-color-white);
-  display: block;
-  height: $button-height;
-  text-align: left;
-  padding-left: ($button-height * .8);
-  padding-right: ($button-height * .6);
-  line-height: $button-height;
-  color: var(--theme-color-title);
-  border-radius: 0 ($button-height / 2) ($button-height / 2) 0;
-  transform: translate3d(-100%, 0, 0);
-  transition: transform 175ms ease;
+    font-size: 1rem;
+    background: var(--theme-color-white);
+    display: block;
+    height: $button-height;
+    text-align: left;
+    padding-left: ($button-height * .8);
+    padding-right: ($button-height * .6);
+    line-height: $button-height;
+    color: var(--theme-color-title);
+    border-radius: 0 ($button-height / 2) ($button-height / 2) 0;
+    transform: translate3d(-100%, 0, 0);
+    transition: transform 175ms ease;
 }
 
-@mixin shadowBox ($OffsetX, $OffsetY, $blurRadius, $spreadRadius, $colorShadow ){ 
-  -webkit-box-shadow: $OffsetX $OffsetY $blurRadius $spreadRadius $colorShadow;
-  -moz-box-shadow: $OffsetX $OffsetY $blurRadius $spreadRadius $colorShadow;
-  box-shadow: $OffsetX $OffsetY $blurRadius $spreadRadius $colorShadow;
+@mixin shadowBox ($OffsetX, $OffsetY, $blurRadius, $spreadRadius, $colorShadow) {
+    -webkit-box-shadow: $OffsetX $OffsetY $blurRadius $spreadRadius $colorShadow;
+    -moz-box-shadow: $OffsetX $OffsetY $blurRadius $spreadRadius $colorShadow;
+    box-shadow: $OffsetX $OffsetY $blurRadius $spreadRadius $colorShadow;
 }
 
 //input variables
@@ -136,9 +136,11 @@ $base-font-size: 1.0em;
     0% {
         transform: scale(1, 1);
     }
+
     50% {
         opacity: 0.3;
     }
+
     100% {
         transform: scale(1.45);
         opacity: 0;
@@ -164,6 +166,7 @@ $base-font-size: 1.0em;
     right: 0px;
     padding: 5px;
     margin: 0px;
+
     @media (max-width: 360px) {
         width: 320px;
     }
@@ -185,7 +188,7 @@ $base-font-size: 1.0em;
     border-radius: 50%;
     background-color: rgb(119, 187, 74);
     /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
-    @include shadowBox( 1px, 1px, 6px, 0px, rgba(68, 68, 68, 0.705));
+    @include shadowBox(1px, 1px, 6px, 0px, rgba(68, 68, 68, 0.705));
 }
 
 .circle-anime {
@@ -218,20 +221,24 @@ $base-font-size: 1.0em;
     border-radius: 10px;
     background-color: var(--theme-color-white);
     /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
-    @include shadowBox( 2px, 1px, 6px, 0px, rgba(68, 68, 68, 0.705));
+    @include shadowBox(2px, 1px, 6px, 0px, rgba(68, 68, 68, 0.705));
     animation: slideInRight .6s 0.0s both;
+
     &>div {
         margin: 5px;
     }
+
     @media (max-width: 680px) {
         p {
             font-size: 0.9em;
         }
     }
+
     &>.content-whatsapp {
         &.-top {
             display: flex;
             flex-direction: column;
+
             p {
                 color: rgb(88, 88, 88);
                 font-family: 'Roboto';
@@ -239,6 +246,7 @@ $base-font-size: 1.0em;
                 font-size: 1.0em;
             }
         }
+
         &.-bottom {
             display: flex;
             flex-direction: row;
@@ -258,7 +266,8 @@ $base-font-size: 1.0em;
     outline: none;
     cursor: pointer;
     background-color: rgb(247, 96, 96);
-    @include shadowBox( 1px, 1px, 2px, 0px, rgba(68, 68, 68, 0.705));
+    @include shadowBox(1px, 1px, 2px, 0px, rgba(68, 68, 68, 0.705));
+
     &:hover {
         background-color: rgb(247, 29, 29);
         transition: .3s;
@@ -277,7 +286,8 @@ $base-font-size: 1.0em;
     border: none;
     outline: none;
     cursor: pointer;
-    @include shadowBox( 1px, 1px, 2px, 0px, rgba(68, 68, 68, 0.705));
+    @include shadowBox(1px, 1px, 2px, 0px, rgba(68, 68, 68, 0.705));
+
     &:hover {
         background-color: #f8f8f8;
         transition: .3s;
@@ -304,16 +314,19 @@ input {
         transition: width 0.3s ease-in-out;
         outline: none;
         transition: .3s;
+
         @media (max-width: 420px) {
             width: $width-input - 25px;
         }
     }
+
     &.whats-input {
         &::placeholder {
             /* Most modern browsers support this now. */
             color: $placeholder-input;
             opacity: 1;
         }
+
         &[type=text]:focus {
             background-color: #f8f8f8;
             -webkit-transition: width 0.3s ease-in-out;
@@ -333,10 +346,10 @@ input {
     color: var(--theme-color-white)
 }
 
-.icon-font-color{
-  color: #ffffff
+.icon-font-color {
+    color: #ffffff
 }
 
-.icon-font-color--black{
-  color: #333333
+.icon-font-color--black {
+    color: #333333
 }

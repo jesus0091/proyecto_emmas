@@ -9,8 +9,6 @@
 
 
 header {
-    background-color: rgba(0 0 0 / 0.1);
-    backdrop-filter: blur(5px);
 
     img {
         width: 75px;
@@ -39,7 +37,7 @@ header {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-image: url(../img/Banner.jpg);
+    background-image: url(../img/banner-2.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -56,12 +54,52 @@ header {
 
 
     .wave {
-        // height: 12%;
         width: 100%;
         position: absolute;
         bottom: 0;
     }
-
-
-
+    // &::after{
+    //     content: '';
+    //     height: 100%;
+    //     width: 100%;
+    //     background-color: rgba(70, 51, 51, 0.5);
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     z-index: -1;
+    // }
 }
+.name_page {
+    font-family: 'Aloja',sans-serif;
+    font-size: 6rem;
+    color: var(--theme-bg-footer);
+    margin: 0;
+    font-weight: bold;
+
+    @media only screen and (max-width: 578px) {
+        font-size: 3rem;
+    }
+}
+
+.slogan-page{
+    color: var(--theme-bg-footer);
+
+    span {
+        font-weight: normal;
+        text-decoration: none;
+        color: #ca2e55;
+    }
+
+    @media only screen and (max-width: 578px) {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+ 
+ 
+  
+  
