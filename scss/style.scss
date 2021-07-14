@@ -8,10 +8,5 @@
 
 @font-face {
     font-family: Aloja;
-    src: url(./fonts/Aloja-Light.otf);
-}
-
-@font-face {
-    font-family: Aloja-2;
-    src: url(./fonts/Aloja-Light.woff);
+    src: url(./fonts/Aloja-Light.otf) format('embedded-opentype'), url(./fonts/Aloja-Light.woff) format('woff');
 }
