@@ -58,16 +58,7 @@ header {
         position: absolute;
         bottom: 0;
     }
-    // &::after{
-    //     content: '';
-    //     height: 100%;
-    //     width: 100%;
-    //     background-color: rgba(70, 51, 51, 0.5);
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     z-index: -1;
-    // }
+
 }
 .name_page {
     font-family: 'Aloja',sans-serif;
@@ -83,6 +74,7 @@ header {
 
 .slogan-page{
     color: var(--theme-bg-footer);
+    margin-bottom: 60px;
 
     span {
         font-weight: normal;
@@ -91,7 +83,7 @@ header {
     }
 
     @media only screen and (max-width: 578px) {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
 
