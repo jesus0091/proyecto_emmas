@@ -519,7 +519,7 @@ body {
 }
 
 .emmas-buy h2 {
-  font-family: "Aloja", sans-serif;
+  font-family: "Aloja", "Aloja-2", sans-serif;
   text-align: center;
   font-size: 3.5rem;
   letter-spacing: 0.5px;
@@ -1396,7 +1396,7 @@ template {
 
 @font-face {
   font-family: Aloja;
-  src: url(/fonts/Aloja-Light.otf);
+  src: url(../fonts/Aloja-Light.eot) format("opentype"), url(../fonts/Aloja-Light.woff) format("woff");
 }
 
 /*# sourceMappingURL=style.css.map */
