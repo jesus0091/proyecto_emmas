@@ -12,22 +12,27 @@
             font-size: 1.75rem;
         }
     }
+
     .img-card {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .img_brownie {
         height: 17rem;
+
         @media only screen and (max-width: 578px) {
             height: 9rem;
         }
     }
+
     .svg_brownie {
         position: absolute;
         transform: translate(-30%, -30%);
         z-index: -1;
         height: 600px;
+
         @media only screen and (max-width: 578px) {
             height: 300px;
         }
@@ -40,6 +45,7 @@
             height: 11rem;
         }
     }
+
     .svg_chocoteja {
         position: absolute;
         transform: translate(-20%, -20%);
@@ -48,6 +54,7 @@
 
         @media only screen and (max-width: 578px) {
             height: 300px;
+            transform: translate(-15%, -20%);
         }
     }
 
@@ -58,6 +65,7 @@
             height: 8rem;
         }
     }
+
     .svg_alfajor {
         position: absolute;
         transform: translate(-30%, -35%);
@@ -80,6 +88,7 @@
             font-size: 3.5rem;
             color: var(--theme-color-title);
         }
+
         .card-body {
             padding: 0;
 
@@ -88,31 +97,54 @@
                 margin-bottom: .25rem;
 
             }
+
             .text-secondary {
                 font-size: 1rem;
+                color: #ca2e55 !important;
+
                 span {
                     font-size: 1rem;
                     font-weight: bold;
                 }
             }
         }
+
         @media only screen and (max-width: 578px) {
             h3 {
-                font-size: 1.75rem;
+                font-size: 1.5rem;
             }
-            .card-body{
+
+            .card-title {
+                margin: 0;
+            }
+
+            .card-body {
 
                 p {
                     font-size: .85rem;
                 }
+
                 .text-secondary {
-                    font-size: .75rem;
+                    font-size: .85rem;
+                    color: #ca2e55;
+
                     span {
-                        font-size: .75rem;
+                        font-size: .85rem;
+                        color: #ca2e55;
                     }
                 }
             }
+
         }
     }
 
+}
+.credits {
+    font-size: 0.85rem;
+    color: rgba( 255 255 255 / 0.3);
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 5px;
+    letter-spacing: 0.5px;
 }

@@ -2,22 +2,39 @@
 
 footer {
     background-color: var(--theme-bg-footer);
-    margin-top: 10rem;
+    margin-top: 7rem;
 
     .f-margin {
-        margin-top: -50px;
+        margin-top: -40px;
     }
 
-    img {
-        width: 7rem;
+    .brand-footer {
+        font-family: 'Aloja', cursive;
+        font-size: 1.25rem;
+        color: var(--theme-color-white);
+        margin: 0;
     }
 
     h3 {
         color: var(--theme-color-white);
         font-family: 'Roboto', sans-serif;
+        font-size: 0.85rem;
         font-weight: bold;
         letter-spacing: 0.5px;
 
+    }
+    .media-social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 7px;
+        border: 1px solid var(--theme-color-bg);
+        border-radius: 50px;
+        width: 35px;
+        height: 35px;
+        margin: 0 5px;
+        color: var(--theme-bg-body);
+        text-decoration: none;
     }
 
     ul {
@@ -33,6 +50,13 @@ footer {
 
         }
     }
+}
+.wave-footer {
+    position: absolute;
+    height: 4rem;
+    overflow: hidden;
+    width: 100%;
+    bottom: 100%;
 }
 
 $button-height: 30px;
@@ -352,4 +376,14 @@ input {
 
 .icon-font-color--black {
     color: #333333
+}
+
+.credits {
+    font-size: 0.65rem;
+    color: rgba( 255 255 255 / 0.3);
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 5px;
+    letter-spacing: 0.75px;
 }

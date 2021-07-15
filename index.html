@@ -65,7 +65,7 @@
         </div>
     </div>
     <!--------------------------------------------------- Section 1 ---------------------------------------------------->
-    <div class="overflow-hidden">
+    <div class="overflow-hidden mb-4">
         <div class="container emmas-home" id="home">
             <h2 class="mb-5 m-md-0" data-aos="flip-up" data-aos-duration="750">Nuestros Productos</h2>
             <div class="row py-4 my-4 py-md-5 my-md-5">
@@ -139,7 +139,7 @@
     </div>
     <!--------------------------------------------------- Section 2 ---------------------------------------------------->
     <section class="spikes"></section>
-    <div class="bg-brown py-5 my-5 overflow-hidden" id="about">
+    <div class="bg-brown py-5 mb-5 overflow-hidden" id="about">
         <div class="container emmas-about ">
             <h2 class="pt-4" data-aos="flip-up" data-aos-duration="750">Nosotros</h2>
             <div class="row py-md-5 card">
@@ -235,7 +235,7 @@
     <!------------------------------------------------------------------------------------------------------------------>
     <!--------------------------------------------------- Footer ------------------------------------------------------->
     <footer class="position-relative">
-        <div style="height: 150px; overflow: hidden; position: absolute; width: 100%; bottom: 140px;">
+        <div  class="wave-footer">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
                 <path d="M-22.86,93.25 C222.06,228.45 342.26,20.22 536.40,155.42 L500.00,150.00 L0.00,150.00 Z"
                     style="stroke: none; fill: #452103;"></path>
@@ -243,10 +243,25 @@
         </div>
         <div class="container">
             <div class="row pb-2 f-margin">
-                <div class="col-3 d-flex align-items-center">
-                    <img src="img/logo_emmas.png" alt="">
+                <div class="col-4 d-flex align-items-end">
+                    <h3 class="brand-footer">EMMA'S</h3>
                 </div>
-                <div class="col-3 d-none">
+                <div class="col-4 d-sm-none">
+                    <div class="row">
+                        <div class="col text-center">
+                            <h3>Siguenos</h3>
+                            <div class="d-flex flex-row justify-content-center align-items-center">
+                                <a class="media-social" href="">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                <a class="media-social" href="">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 d-none d-md-block">
                     <h3>Enlaces</h3>
                     <ul class="">
                         <li class="nav-item active">
@@ -289,31 +304,32 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-3">
-                    <h3>Contacto</h3>
-                    <div class="nav-bottom">
-                        <div class="popup-whatsapp fadeIn">
-                            <div class="content-whatsapp -top"><button type="button" class="closePopup">
-                                    <i class="material-icons icon-font-color">close</i>
-                                </button>
-                                <p>¡Hola, 😊 necesitas ayuda?</p>
-                            </div>
-                            <div class="content-whatsapp -bottom">
-                                <input class="whats-input" id="whats-in" type="text"
-                                    Placeholder="Envíame tu pedido..." />
-                                <button class="send-msPopup" id="send-btn" type="button">
-                                    <i class="material-icons icon-font-color--black">send</i>
-                                </button>
-
-                            </div>
-                        </div>
-                        <button type="button" id="whats-openPopup" class="whatsapp-button">
-                            <span class="icon-whatsapp"><i class="fab fa-whatsapp"></i></span>
-                        </button>
-                        <div class="circle-anime"></div>
-                    </div>
+                <div class="col-3 d-none">
+                    <h3 class="d-none">Contacto</h3>
                 </div>
             </div>
+            <div class="nav-bottom">
+                <div class="popup-whatsapp fadeIn">
+                    <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                            <i class="material-icons icon-font-color">close</i>
+                        </button>
+                        <p>¡Hola, 😊 necesitas ayuda?</p>
+                    </div>
+                    <div class="content-whatsapp -bottom">
+                        <input class="whats-input" id="whats-in" type="text"
+                            Placeholder="Envíame tu pedido..." />
+                        <button class="send-msPopup" id="send-btn" type="button">
+                            <i class="material-icons icon-font-color--black">send</i>
+                        </button>
+
+                    </div>
+                </div>
+                <button type="button" id="whats-openPopup" class="whatsapp-button">
+                    <span class="icon-whatsapp"><i class="fab fa-whatsapp"></i></span>
+                </button>
+                <div class="circle-anime"></div>
+            </div>
+            <p class="credits">&copy; 2021: CODERHOUSE</p>
         </div>
     </footer>
     <!--------------------------------------------------- Bootstrap V4.6 ----------------------------------------------->

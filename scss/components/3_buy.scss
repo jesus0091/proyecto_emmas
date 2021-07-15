@@ -46,10 +46,7 @@
                 font-weight: lighter;
                 line-height: 1.15;
 
-                @media only screen and (max-width: 578px) {
-                    font-size: .75rem;
-                    font-weight: normal;
-                }
+                
             }
         }
 
@@ -90,7 +87,7 @@
     display: block;
     height: 50px;
     background-size: 50px 100%;
-    background-image: linear-gradient(135deg, var(--theme-color-bg) 25%, transparent 25%), linear-gradient(225deg, var(--theme-color-bg) 25%, transparent 25%);
+    background-image: linear-gradient(135deg, black 25%, transparent 25%), linear-gradient(225deg, var(--theme-color-bg) 25%, transparent 25%);
     background-position: 0 0;
 }
 
@@ -133,10 +130,14 @@
     
             .card-body {
                 padding: 10px;
+                font-size: 0.85rem;
                 p {
                     font-size: 0.85rem;
                     font-weight: normal;
                     margin-bottom: 0;
+                }
+                .text-secondary {
+                    font-size: 0.85rem;
                 }
             }
     
