@@ -5,6 +5,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-------------------------------------------------- SEO ----------------------------------------------------------->
+    <meta name="description"
+        content="Emmas, emprendimiento, postres, brownies, chocotejas, alfajores">
+    <meta name="keywords"
+        content="peru, lima, brownie, brownies, dulce, postre, chocolate, alfajor, alfajores, hermanas, emprendimiento, familia">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-------------------------------------------------- OPEN GRAPH ---------------------------------------------------->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="EMMA'S"/>
+    <meta property="og:description" content="Para endulzar tu día"/>
+    <meta property="og:image:type" content="image/jpeg"/>
+    <meta property="og:site_name" content="EMMA'S"/>
+    <meta property="og:author" content="Jesús Hernández, Laura Duarte">
     <!-------------------------------------------------- Bootstrap V4.6 ------------------------------------------------>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
@@ -12,7 +25,8 @@
     <!-----Roboto---------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <!--------------------------------------------------- Google Api --------------------------------------------------->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -29,13 +43,15 @@
     <!------------------------------------------------------------------------------------------------------------------>
 </head>
 
-<body class="">
-    <header class="container-fluid m-0 p-0 fixed-top">
+<body>
+    <!--------------------------------------------------- Section 0 ---------------------------------------------------->
+    <div class="overflow-hidden">
+    <header class="container-fluid m-0 p-0 fixed-top scrolling-navbar">
         <nav class="navbar navbar-expand-lg container navbar-emmas animate__animated animate__fadeInDown">
             <a class="navbar-brand" href="#/home"><img src="img/logo_emma.png" alt="Logo Emma's"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            <button class="navbar-toggler button_navbar" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
@@ -153,13 +169,13 @@
                                     d="M436,340.5Q394,431,299,440.5Q204,450,122,400.5Q40,351,55.5,257.5Q71,164,139,112.5Q207,61,301.5,64Q396,67,437,158.5Q478,250,436,340.5Z"
                                     fill="none" stroke-width="7px" stroke="rgb(131, 88, 88)"></path>
                             </svg>
-                            <img class=" svg_2" src="img/banner-4.jpg" alt="">
+                            <img class=" svg_2" src="img/banner-4.jpg" alt="" data-aos="zoom-in">
                         </div>
                     </div>
                 </div>
                 <div class="col-6 d-flex justify-content-center flex-column">
-                    <div class="card-title d-inline-block">
-                        <h3>Hecho en <span>Familia</span></h3>
+                    <div class="card-title d-inline-block" data-aos="zoom-out-down">
+                        <h3 >Hecho en <span>Familia</span></h3>
                     </div>
                     <div class="d-none card-description">
                         <p>¡Hola! Te presentamos nuestro emprendimiento familiar.
@@ -223,7 +239,7 @@
     <!------------------------------------------------------------------------------------------------------------------>
     <!--------------------------------------------------- Footer ------------------------------------------------------->
     <footer class="position-relative">
-        <div  class="wave-footer">
+        <div class="wave-footer">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
                 <path d="M-22.86,93.25 C222.06,228.45 342.26,20.22 536.40,155.42 L500.00,150.00 L0.00,150.00 Z"
                     style="stroke: none; fill: #452103;"></path>
@@ -304,8 +320,7 @@
                         <p>¡Hola, 😊 necesitas ayuda?</p>
                     </div>
                     <div class="content-whatsapp -bottom">
-                        <input class="whats-input" id="whats-in" type="text"
-                            Placeholder="Envíame tu pedido..." />
+                        <input class="whats-input" id="whats-in" type="text" Placeholder="Envíame tu pedido..." />
                         <button class="send-msPopup" id="send-btn" type="button">
                             <i class="material-icons icon-font-color--black">send</i>
                         </button>

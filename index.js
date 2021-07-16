@@ -1,3 +1,18 @@
+$(function(){
+	var navbar = $('.scrolling-navbar');
+	
+	$(window).scroll(function(){
+		if($(window).scrollTop() <= 40){
+			navbar.removeClass('navbar-scroll');
+		} else {
+			navbar.addClass('navbar-scroll');
+		}
+	});
+});
+$(document).on('click', function () {
+    $('.navbar-collapse').collapse('hide');
+});
+/*--------------------------------------------------------------------------------------------------------------*/ 
 popupWhatsApp = () => {
   
   let btnClosePopup = document.querySelector('.closePopup');
@@ -22,11 +37,10 @@ popupWhatsApp = () => {
 
   setTimeout(() => {
     popup.classList.toggle('is-active-whatsapp-popup');
-  }, 3000);
+  }, 4000);
 }
 
 popupWhatsApp();
-
 /*--------------------------------------------------------------------------------------------------------------*/ 
 const typed = new Typed('.typed', {
 	strings: [
@@ -48,3 +62,4 @@ const typed = new Typed('.typed', {
 	cursorChar: '|', 
 	contentType: 'html', 
 });
+/*--------------------------------------------------------------------------------------------------------------*/ 

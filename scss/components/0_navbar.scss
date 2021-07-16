@@ -91,7 +91,21 @@ header {
 
 
 
+  .button_navbar {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    margin-right: 2px;
+    border: none !important;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    background: var(--theme-bg-body);
+    color: var(--theme-bg-footer);
+
+}
  
- 
-  
-  
+.navbar-scroll {
+	background: linear-gradient(rgba(#452103, 0.9) 0%, rgba(#452103, 0.3) 50%, transparent 90%);
+	transition-duration: 0.6s ease all;
+}
