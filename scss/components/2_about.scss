@@ -33,9 +33,9 @@
             overflow: hidden;
             height: max-content;
 
-            svg{
-                height: 530px;
-                top: -45px;
+            img{
+                height: 250px;
+                border-radius: 55% 45% 38% 62% / 59% 48% 52% 41% ;
             }
             .svg_1 {
                 height: 560px;
@@ -109,6 +109,7 @@
             .card-img{
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 min-height: 300px;
                 border-radius: 15px;
                 overflow: hidden;
@@ -118,11 +119,12 @@
                 overflow: hidden;
                 height: max-content;
     
-                svg{
-                    height: 530px;
-                    top: -125px;
+                img{
+                    height: 16rem;
                 }
                 .svg_1 {
+                    top: -120px;
+                    left: 0;
                     height: 560px;
                     z-index: 1;
                 }
@@ -139,18 +141,19 @@
                 z-index: 1;
     
                 h3 {
-                    font-size: 1rem;
+                    font-size: 1.25rem;
                     font-weight: bolder;
                     margin: 0;
                     span {
-                        font-size: .85rem;
+                        font-size: 1rem;
                     }
                 }
             }
     
             .card-description {
                 p {
-                    font-size: .85rem;
+                    text-align: center;
+                    font-size: 1rem;
                 }
             }
     

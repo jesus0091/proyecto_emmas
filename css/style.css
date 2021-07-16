@@ -136,6 +136,9 @@ body {
 }
 
 .emmas-home h2 {
+  display: flex;
+  justify-content: center;
+  z-index: 15;
   text-align: center;
   font-family: "Aloja", cursive;
   font-size: 3.5rem;
@@ -253,16 +256,6 @@ body {
     font-size: 0.85rem;
     color: #ca2e55;
   }
-}
-
-.credits {
-  font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.3);
-  font-weight: bold;
-  text-align: center;
-  margin: 0;
-  padding-bottom: 5px;
-  letter-spacing: 0.5px;
 }
 
 :root {
@@ -401,9 +394,9 @@ header nav ul a {
   overflow: hidden;
   height: max-content;
 }
-.emmas-about .card .video-frame svg {
-  height: 530px;
-  top: -45px;
+.emmas-about .card .video-frame img {
+  height: 250px;
+  border-radius: 55% 45% 38% 62%/59% 48% 52% 41%;
 }
 .emmas-about .card .video-frame .svg_1 {
   height: 560px;
@@ -465,6 +458,7 @@ header nav ul a {
   .emmas-about .card .card-img {
     display: flex;
     align-items: center;
+    justify-content: center;
     min-height: 300px;
     border-radius: 15px;
     overflow: hidden;
@@ -474,11 +468,12 @@ header nav ul a {
     overflow: hidden;
     height: max-content;
   }
-  .emmas-about .card .video-frame svg {
-    height: 530px;
-    top: -125px;
+  .emmas-about .card .video-frame img {
+    height: 16rem;
   }
   .emmas-about .card .video-frame .svg_1 {
+    top: -120px;
+    left: 0;
     height: 560px;
     z-index: 1;
   }
@@ -494,15 +489,16 @@ header nav ul a {
     z-index: 1;
   }
   .emmas-about .card .card-title h3 {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: bolder;
     margin: 0;
   }
   .emmas-about .card .card-title h3 span {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
   .emmas-about .card .card-description p {
-    font-size: 0.85rem;
+    text-align: center;
+    font-size: 1rem;
   }
 }
 :root {
