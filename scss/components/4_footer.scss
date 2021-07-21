@@ -39,6 +39,12 @@ footer {
         margin: 0 5px;
         color: var(--theme-bg-body);
         text-decoration: none;
+
+        &:active {
+            background-color: peachpuff;
+            color: var(--theme-bg-footer);
+            transition: .2s easy all;
+        }
     }
 
     ul {

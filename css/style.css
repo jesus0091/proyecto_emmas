@@ -868,6 +868,11 @@ footer .media-social {
   color: var(--theme-bg-body);
   text-decoration: none;
 }
+footer .media-social:active {
+  background-color: peachpuff;
+  color: var(--theme-bg-footer);
+  transition: 0.2s easy all;
+}
 footer ul .nav-link {
   padding: 0.15rem;
   color: var(--theme-color-footer);
