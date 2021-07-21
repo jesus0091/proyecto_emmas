@@ -32,7 +32,7 @@ popupWhatsApp = () => {
   sendBtn.addEventListener("click", () => {
   let msg = document.getElementById('whats-in').value;
   let relmsg = msg.replace(/ /g,"%20");  
-   window.open('https://wa.me/+51999674777?text='+relmsg, '_blank'); 
+   window.open('https://wa.me/+51999675777?text='+relmsg, '_blank'); 
   });
 
   setTimeout(() => {
