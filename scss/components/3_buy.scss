@@ -5,13 +5,13 @@
     h2 {
         font-family: 'Aloja', 'Aloja-2', sans-serif;
         text-align: center;
-        font-size: 3.5rem;
+        font-size: 1.75rem;
         letter-spacing: 0.5px;
         color: var(--theme-color-title);
         margin-bottom: 50px;
 
-        @media only screen and (max-width: 578px) {
-            font-size: 1.75rem;
+        @media only screen and (min-width: 992px) {
+            font-size: 3.5rem;
         }
     }
 
@@ -19,6 +19,10 @@
         border-radius: 15px;
         border: none;
         min-height: 21rem;
+
+        @media only screen and (max-width: 768px) {
+            min-height: 16rem;
+        }
 
         .card-img {
             display: flex;
@@ -37,6 +41,13 @@
                     height: 85px;
                 }
             }
+            @media only screen and (max-width: 768px) {
+                padding: 15px;
+
+                img {
+                    height: 100px;
+                }
+            }
         }
 
         .card-body {
@@ -45,6 +56,10 @@
                 font-size: 1.5rem;
                 font-weight: lighter;
                 line-height: 1.15;
+
+                @media only screen and (max-width: 768px) {
+                   font-size: 1.15rem;
+                }
 
                 
             }
@@ -87,7 +102,7 @@
     display: block;
     height: 50px;
     background-size: 50px 100%;
-    background-image: linear-gradient(135deg, black 25%, transparent 25%), linear-gradient(225deg, var(--theme-color-bg) 25%, transparent 25%);
+    background-image: linear-gradient(135deg, var(--theme-color-bg) 25%, transparent 25%), linear-gradient(225deg, var(--theme-color-bg) 25%, transparent 25%);
     background-position: 0 0;
 }
 

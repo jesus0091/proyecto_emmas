@@ -46,9 +46,9 @@
 <body>
     <!--------------------------------------------------- Section 0 ---------------------------------------------------->
     <div class="overflow-hidden">
-    <header class="container-fluid m-0 p-0 fixed-top scrolling-navbar">
+    <header class="container-fluid m-0 p-0 fixed-top scrolling-navbar" >
         <nav class="navbar navbar-expand-lg container navbar-emmas animate__animated animate__fadeInDown">
-            <a class="navbar-brand" href="#/home"><img src="img/logo_emma.png" alt="Logo Emma's"></a>
+            <a class="navbar-brand" href="#intro"><img src="img/logo_emma.png" alt="Logo Emma's"></a>
             <button class="navbar-toggler button_navbar" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
@@ -68,12 +68,12 @@
             </div>
         </nav>
     </header>
-    <div class="jumbo-tron">
+    <div class="jumbo-tron" id="intro">
         <div class="col-9 col-md-4 offset-3 offset-md-4 d-flex flex-column justify-content-center header-text">
             <h1 class="name_page">EMMA'S</h1>
             <h2 class="slogan-page">para endulzar tu día <br> con <span class="typed"></span></h2>
         </div>
-        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+        <div class="wave" id="home" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 100%; width: 100%;">
                 <path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
                     style="stroke: none; fill: rgb(250, 242, 242);"></path>
@@ -81,17 +81,17 @@
         </div>
     </div>
     <!--------------------------------------------------- Section 1 ---------------------------------------------------->
-    <div class="overflow-hidden mb-4">
-        <div class="container emmas-home" id="home">
+    <div class="overflow-hidden mb-4" >
+        <div class="container emmas-home" >
             <h2 class="mb-5 m-md-0" data-aos="flip-up" data-aos-duration="750">Nuestros Productos</h2>
             <div class="row py-4 my-4 py-md-5 my-md-5">
-                <div class="col-6 d-flex justify-content-center position-relative" data-aos="fade-right">
+                <div class="col-6 d-flex justify-content-center justify-content-md-end justify-content-lg-center position-relative" data-aos="fade-right">
                     <div>
                         <img class="svg_brownie" src="img/blob-2.svg" alt="">
                         <img class="img_brownie" src="img/brownie.png" alt="Image of Brownies">
                     </div>
                 </div>
-                <div class="col-6 col-md-4 d-flex align-items-center" data-aos="fade-left">
+                <div class="col-6 col-md-4 d-flex align-items-center " data-aos="fade-left">
                     <div class="card">
                         <div class="card-title">
                             <h3>Brownies</h3>
@@ -109,7 +109,7 @@
                 </div>
             </div>
             <div class="row py-4 my-4 py-md-5 my-md-5">
-                <div class="col-6 d-flex justify-content-center order-1 position-relative" data-aos="fade-left">
+                <div class="col-6 d-flex justify-content-center justify-content-md-start justify-content-lg-center order-1 position-relative" data-aos="fade-left">
                     <div>
                         <img class="svg_chocoteja" src="img/blob-1.svg" alt="">
                         <img class="img_chocoteja" src="img/chocoteja.png" alt="">
@@ -129,7 +129,7 @@
                 </div>
             </div>
             <div class="row py-4 my-4 py-md-5 my-md-5">
-                <div class="col-6 d-flex justify-content-end position-relative" data-aos="fade-right">
+                <div class="col-6 d-flex justify-content-end justify-content-lg-center position-relative" data-aos="fade-right">
                     <div>
                         <img class="svg_alfajor" src="img/blob-3.svg" alt="">
                         <img class="img_alfajor" src="img/alfajor.png" alt="">
@@ -144,7 +144,7 @@
                             <p>
                                 Alfajores de maicena clásicos
                             </p>
-                            <p class="text-secondary">
+                            <p class="text-secondary" id="about">
                                 También pueden ser bañados en chocolate bitter o chocolate blanco.
                             </p>
                         </div>
@@ -154,8 +154,8 @@
         </div>
     </div>
     <!--------------------------------------------------- Section 2 ---------------------------------------------------->
-    <section class="spikes"></section>
-    <div class="bg-brown py-5 mb-5 overflow-hidden" id="about">
+    <section class="spikes" ></section>
+    <div class="bg-brown py-5 mb-5 overflow-hidden" >
         <div class="container emmas-about ">
             <h2 class="pt-4" data-aos="flip-up" data-aos-duration="750">Nosotros</h2>
             <div class="row py-md-5 card">
@@ -177,7 +177,7 @@
                     <div class="card-title d-inline-block" data-aos="zoom-out-down">
                         <h3 >Hecho en <span>Familia</span></h3>
                     </div>
-                    <div class="d-none card-description">
+                    <div class="d-none d-md-block card-description">
                         <p>¡Hola! Te presentamos nuestro emprendimiento familiar.
                             Elaboramos alfajores, chocotejas y brownies.
                             Nuestro objetivo es hacer que los postres sean
@@ -246,19 +246,20 @@
             </svg>
         </div>
         <div class="container">
-            <div class="row pb-2 f-margin">
-                <div class="col-4 d-flex align-items-end">
-                    <h3 class="brand-footer">EMMA'S</h3>
+            <div class="row pb-2 py-md-3 f-margin">
+                <div class="col-4 col-md-3 d-flex align-items-end align-items-md-center">
+                    <a href="#intro" class="text-decoration-none"><h3 class="brand-footer">EMMA'S</h3></a>
+                    
                 </div>
-                <div class="col-4 d-sm-none">
+                <div class="col-4 d-md-none">
                     <div class="row">
                         <div class="col text-center">
                             <h3>Siguenos</h3>
                             <div class="d-flex flex-row justify-content-center align-items-center">
-                                <a class="media-social" href="">
+                                <a class="media-social" href="https://instagram.com/emmas1810?utm_medium=copy_link">
                                     <i class="fa fa-instagram"></i>
                                 </a>
-                                <a class="media-social" href="">
+                                <a class="media-social" href="https://m.facebook.com/Emma1810">
                                     <i class="fa fa-facebook"></i>
                                 </a>
                             </div>
@@ -267,22 +268,22 @@
                 </div>
                 <div class="col-3 d-none d-md-block">
                     <h3>Enlaces</h3>
-                    <ul class="">
+                    <ul class="justify-content-center">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#/home">Inicio</a>
+                            <a class="nav-link" href="#home">Nuestros Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#/about">¿Quienes somos?</a>
+                            <a class="nav-link" href="#about">¿Quienes somos?</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#/buy">¿Cómo comprar?</a>
+                            <a class="nav-link" href="#buy">¿Cómo comprar?</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-3 d-none">
+                <div class="col-3 d-none d-md-block">
                     <h3>Siguenos</h3>
                     <div class="share-buttons">
-                        <a class="mb-2" href="">
+                        <a class="mb-2" href="https://instagram.com/emmas1810?utm_medium=copy_link">
                             <div class="share-button">
                                 <div class="share-button-secondary">
                                     <div class="share-button-secondary-content">
@@ -294,7 +295,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a class="mb-2" href="">
+                        <a class="mb-2" href="https://m.facebook.com/Emma1810">
                             <div class="share-button">
                                 <div class="share-button-secondary">
                                     <div class="share-button-secondary-content">
@@ -308,8 +309,9 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-3 d-none">
-                    <h3 class="d-none">Contacto</h3>
+                <div class="col-3 d-none d-lg-block where">
+                    <h3 class="">¿Dónde estamos?</h3>
+                    <p class="align-self-center m-0"><span><img class="mr-1" src="img/peru.png" alt=""> </span>  Lima, Perú</p>
                 </div>
             </div>
             <div class="nav-bottom">
@@ -332,7 +334,7 @@
                 </button>
                 <div class="circle-anime"></div>
             </div>
-            <p class="credits">&copy; 2021: CODERHOUSE</p>
+            <p class="credits">&copy; COPYRIGHT 2021: CODERHOUSE</p>
         </div>
     </footer>
     <!--------------------------------------------------- Bootstrap V4.6 ----------------------------------------------->

@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --theme-color-white: #ffffff;
     --theme-color-black: rgb(0, 0, 0);
@@ -28,4 +32,25 @@
 body {
     background-color: var(--theme-color-bg);
     font-family: 'Roboto', sans-serif;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+// max 578
+$p-size: 1rem;
+$h2-size: 1.75rem;
+
+@media only screen and (min-width: 576px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+    $p-size: 1.25rem;
+    $h2-size: 2rem;
 }

@@ -8,11 +8,11 @@
         z-index: 15;
         text-align: center;
         font-family: 'Aloja', cursive;
-        font-size: 3.5rem;
+        font-size: 1.75rem;
         color: var(--theme-bg-footer);
 
-        @media only screen and (max-width: 578px) {
-            font-size: 1.75rem;
+        @media only screen and (min-width: 992px) {
+            font-size: 3.5rem;
         }
     }
 
@@ -25,7 +25,7 @@
     .img_brownie {
         height: 17rem;
 
-        @media only screen and (max-width: 578px) {
+        @media only screen and (max-width: 768px) {
             height: 9rem;
         }
     }
@@ -36,15 +36,16 @@
         z-index: -1;
         height: 600px;
 
-        @media only screen and (max-width: 578px) {
+        @media only screen and (max-width: 768px) {
             height: 300px;
+            transform: translate(-30%, -20%);
         }
     }
 
     .img_chocoteja {
         height: 23rem;
 
-        @media only screen and (max-width: 578px) {
+        @media only screen and (max-width: 768px) {
             height: 11rem;
         }
     }
@@ -55,7 +56,7 @@
         z-index: -1;
         height: 600px;
 
-        @media only screen and (max-width: 578px) {
+        @media only screen and (max-width: 768px) {
             height: 300px;
             transform: translate(-15%, -20%);
         }
@@ -64,7 +65,7 @@
     .img_alfajor {
         height: 18rem;
 
-        @media only screen and (max-width: 578px) {
+        @media only screen and (max-width: 768px) {
             height: 8rem;
         }
     }
@@ -75,7 +76,7 @@
         z-index: -1;
         height: 600px;
 
-        @media only screen and (max-width: 578px) {
+        @media only screen and (max-width: 768px) {
             height: 300px;
         }
     }
@@ -88,7 +89,7 @@
 
         h3 {
             font-family: 'Aloja', cursive;
-            font-size: 3.5rem;
+            font-size: 1.25rem;
             color: var(--theme-color-title);
         }
 
@@ -96,23 +97,23 @@
             padding: 0;
 
             p {
-                font-size: 1.5rem;
+                font-size: .85rem;
                 margin-bottom: .25rem;
 
             }
 
             .text-secondary {
-                font-size: 1rem;
+                font-size: .85rem;
                 color: #ca2e55 !important;
 
                 span {
-                    font-size: 1rem;
+                    font-size: .85rem;
                     font-weight: bold;
                 }
             }
         }
 
-        @media only screen and (max-width: 578px) {
+        @media only screen and (min-width: 768px) {
             h3 {
                 font-size: 1.5rem;
             }
@@ -124,21 +125,66 @@
             .card-body {
 
                 p {
-                    font-size: .85rem;
+                    font-size: 1rem;
                 }
 
                 .text-secondary {
-                    font-size: .85rem;
+                    font-size: 1rem;
                     color: #ca2e55;
 
                     span {
-                        font-size: .85rem;
+                        font-size: 1rem;
                         color: #ca2e55;
                     }
                 }
             }
 
         }
+        @media only screen and (min-width: 992px) {
+            h3 {
+                font-size: 2.5rem;
+            }
+
+            .card-title {
+                margin: 0;
+            }
+
+            .card-body {
+
+                p {
+                    font-size: 1.15rem;
+                }
+
+                .text-secondary {
+                    font-size: 1.15rem;
+                    color: #ca2e55;
+
+                    span {
+                        font-size: 1.15rem;
+                        color: #ca2e55;
+                    }
+                }
+            }
+
+        }
+        @media only screen and (min-width: 1200px) {
+            h3 {
+                font-size: 3rem;
+            }
+
+        }
     }
 
+}
+.where {
+    p {
+        display: flex;
+        align-items: center;
+        font-size: .85rem;
+        letter-spacing: 0.5px;
+        color: var(--theme-bg-body);
+    }
+    img {
+        width: 20px;
+    }
 }

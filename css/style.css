@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --theme-color-white: #ffffff;
   --theme-color-black: rgb(0, 0, 0);
@@ -87,19 +91,25 @@ header nav ul a {
     font-size: 3rem;
   }
 }
+@media only screen and (max-width: 768px) {
+  .name_page {
+    font-size: 4rem;
+  }
+}
 
 .slogan-page {
   color: var(--theme-bg-footer);
   margin-bottom: 60px;
+  font-size: 1rem;
 }
 .slogan-page span {
   font-weight: normal;
   text-decoration: none;
   color: #ca2e55;
 }
-@media only screen and (max-width: 578px) {
+@media only screen and (min-width: 578px) {
   .slogan-page {
-    font-size: 1rem;
+    font-size: 1.15rem;
   }
 }
 
@@ -119,6 +129,10 @@ header nav ul a {
 .navbar-scroll {
   background: linear-gradient(rgba(69, 33, 3, 0.9) 0%, rgba(69, 33, 3, 0.3) 50%, transparent 90%);
   transition-duration: 0.6s ease all;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -159,12 +173,12 @@ body {
   z-index: 15;
   text-align: center;
   font-family: "Aloja", cursive;
-  font-size: 3.5rem;
+  font-size: 1.75rem;
   color: var(--theme-bg-footer);
 }
-@media only screen and (max-width: 578px) {
+@media only screen and (min-width: 992px) {
   .emmas-home h2 {
-    font-size: 1.75rem;
+    font-size: 3.5rem;
   }
 }
 .emmas-home .img-card {
@@ -175,7 +189,7 @@ body {
 .emmas-home .img_brownie {
   height: 17rem;
 }
-@media only screen and (max-width: 578px) {
+@media only screen and (max-width: 768px) {
   .emmas-home .img_brownie {
     height: 9rem;
   }
@@ -186,15 +200,16 @@ body {
   z-index: -1;
   height: 600px;
 }
-@media only screen and (max-width: 578px) {
+@media only screen and (max-width: 768px) {
   .emmas-home .svg_brownie {
     height: 300px;
+    transform: translate(-30%, -20%);
   }
 }
 .emmas-home .img_chocoteja {
   height: 23rem;
 }
-@media only screen and (max-width: 578px) {
+@media only screen and (max-width: 768px) {
   .emmas-home .img_chocoteja {
     height: 11rem;
   }
@@ -205,7 +220,7 @@ body {
   z-index: -1;
   height: 600px;
 }
-@media only screen and (max-width: 578px) {
+@media only screen and (max-width: 768px) {
   .emmas-home .svg_chocoteja {
     height: 300px;
     transform: translate(-15%, -20%);
@@ -214,7 +229,7 @@ body {
 .emmas-home .img_alfajor {
   height: 18rem;
 }
-@media only screen and (max-width: 578px) {
+@media only screen and (max-width: 768px) {
   .emmas-home .img_alfajor {
     height: 8rem;
   }
@@ -225,7 +240,7 @@ body {
   z-index: -1;
   height: 600px;
 }
-@media only screen and (max-width: 578px) {
+@media only screen and (max-width: 768px) {
   .emmas-home .svg_alfajor {
     height: 300px;
   }
@@ -238,25 +253,25 @@ body {
 }
 .emmas-home .card h3 {
   font-family: "Aloja", cursive;
-  font-size: 3.5rem;
+  font-size: 1.25rem;
   color: var(--theme-color-title);
 }
 .emmas-home .card .card-body {
   padding: 0;
 }
 .emmas-home .card .card-body p {
-  font-size: 1.5rem;
+  font-size: 0.85rem;
   margin-bottom: 0.25rem;
 }
 .emmas-home .card .card-body .text-secondary {
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: #ca2e55 !important;
 }
 .emmas-home .card .card-body .text-secondary span {
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: bold;
 }
-@media only screen and (max-width: 578px) {
+@media only screen and (min-width: 768px) {
   .emmas-home .card h3 {
     font-size: 1.5rem;
   }
@@ -264,16 +279,55 @@ body {
     margin: 0;
   }
   .emmas-home .card .card-body p {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
   .emmas-home .card .card-body .text-secondary {
-    font-size: 0.85rem;
+    font-size: 1rem;
     color: #ca2e55;
   }
   .emmas-home .card .card-body .text-secondary span {
-    font-size: 0.85rem;
+    font-size: 1rem;
     color: #ca2e55;
   }
+}
+@media only screen and (min-width: 992px) {
+  .emmas-home .card h3 {
+    font-size: 2.5rem;
+  }
+  .emmas-home .card .card-title {
+    margin: 0;
+  }
+  .emmas-home .card .card-body p {
+    font-size: 1.15rem;
+  }
+  .emmas-home .card .card-body .text-secondary {
+    font-size: 1.15rem;
+    color: #ca2e55;
+  }
+  .emmas-home .card .card-body .text-secondary span {
+    font-size: 1.15rem;
+    color: #ca2e55;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .emmas-home .card h3 {
+    font-size: 3rem;
+  }
+}
+
+.where p {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  color: var(--theme-bg-body);
+}
+.where img {
+  width: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -365,19 +419,25 @@ header nav ul a {
     font-size: 3rem;
   }
 }
+@media only screen and (max-width: 768px) {
+  .name_page {
+    font-size: 4rem;
+  }
+}
 
 .slogan-page {
   color: var(--theme-bg-footer);
   margin-bottom: 60px;
+  font-size: 1rem;
 }
 .slogan-page span {
   font-weight: normal;
   text-decoration: none;
   color: #ca2e55;
 }
-@media only screen and (max-width: 578px) {
+@media only screen and (min-width: 578px) {
   .slogan-page {
-    font-size: 1rem;
+    font-size: 1.15rem;
   }
 }
 
@@ -402,14 +462,14 @@ header nav ul a {
 .emmas-about h2 {
   text-align: center;
   font-family: "Aloja", cursive;
-  font-size: 3.5rem;
-  color: var(--theme-color-bg);
-  letter-spacing: 0.5;
   font-weight: lighter;
+  font-size: 1.75rem;
+  letter-spacing: 0.5;
+  color: var(--theme-color-bg);
 }
-@media only screen and (max-width: 578px) {
+@media only screen and (min-width: 992px) {
   .emmas-about h2 {
-    font-size: 1.75rem;
+    font-size: 3.5rem;
   }
 }
 .emmas-about .card {
@@ -420,23 +480,62 @@ header nav ul a {
 }
 .emmas-about .card .card-img {
   display: flex;
+  justify-content: center;
   align-items: center;
-  min-height: 460px;
+  min-height: 300px;
   border-radius: 15px;
-  overflow: hidden;
 }
 .emmas-about .card .video-frame {
   border-radius: 10px;
-  overflow: hidden;
   height: max-content;
 }
 .emmas-about .card .video-frame img {
-  height: 250px;
+  height: 16rem;
   border-radius: 55% 45% 38% 62%/59% 48% 52% 41%;
 }
+@media only screen and (min-width: 576px) {
+  .emmas-about .card .video-frame img {
+    height: 20rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .emmas-about .card .video-frame img {
+    height: 16rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .emmas-about .card .video-frame img {
+    height: 21rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .emmas-about .card .video-frame img {
+    height: 25rem;
+  }
+}
 .emmas-about .card .video-frame .svg_1 {
-  height: 560px;
+  top: -25px;
+  left: 0;
+  height: 350px;
   z-index: 1;
+}
+@media only screen and (min-width: 576px) {
+  .emmas-about .card .video-frame .svg_1 {
+    top: -45px;
+    height: 422px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .emmas-about .card .video-frame .svg_1 {
+    top: -45px;
+    height: 422px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .emmas-about .card .video-frame .svg_1 {
+    top: -76px;
+    height: 520px;
+  }
 }
 .emmas-about .card .video_media {
   height: 300px;
@@ -444,99 +543,68 @@ header nav ul a {
 .emmas-about .card .card-title {
   width: max-content;
   background: var(--theme-color-white);
-  padding: 20px;
-  transform: translateX(-40%);
+  padding: 10px;
+  transform: translate(40%, -50%);
   border-radius: 15px;
   z-index: 1;
 }
+@media only screen and (min-width: 992px) {
+  .emmas-about .card .card-title {
+    transform: none;
+  }
+  .emmas-about .card .card-title h3 {
+    font-size: 1.75rem;
+  }
+  .emmas-about .card .card-title h3 span {
+    font-size: 1.5rem;
+  }
+}
 .emmas-about .card .card-title h3 {
+  font-size: 1.25rem;
   font-weight: bolder;
+  margin: 0;
 }
 .emmas-about .card .card-title h3 span {
   font-family: "Aloja", sans-serif;
   color: var(--theme-bg-footer);
-  font-size: 2.15rem;
+  font-size: 1rem;
   font-weight: normal;
 }
-.emmas-about .card .card-description p {
+@media only screen and (min-width: 992px) {
+  .emmas-about .card .card-title h3 {
+    font-size: 1.75rem;
+  }
+  .emmas-about .card .card-title h3 span {
+    font-size: 1.5rem;
+  }
+}
+.emmas-about .card-description p {
   font-family: "Roboto", sans-serif;
+  font-size: 1rem;
   font-weight: lighter;
-  font-size: 1.5rem;
-  color: white;
+  text-align: center;
+  color: var(--theme-color-white);
+}
+@media only screen and (min-width: 576px) {
+  .emmas-about .card-description p {
+    font-size: 1.15rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .emmas-about .card-description p {
+    font-size: 1.25rem;
+    text-align: left;
+  }
 }
 
 .bg-brown {
   background: var(--theme-bg-footer);
 }
 
-@media only screen and (max-width: 578px) {
-  .emmas-about h2 {
-    text-align: center;
-    font-family: "Aloja", cursive;
-    font-size: 3.5rem;
-    color: var(--theme-color-bg);
-    letter-spacing: 0.5;
-    font-weight: lighter;
-  }
+html {
+  scroll-behavior: smooth;
 }
-@media only screen and (max-width: 578px) and (max-width: 578px) {
-  .emmas-about h2 {
-    font-size: 1.75rem;
-  }
-}
-@media only screen and (max-width: 578px) {
-  .emmas-about .card {
-    background: none;
-    border: none;
-    display: flex;
-    flex-direction: row;
-  }
-  .emmas-about .card .card-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 300px;
-    border-radius: 15px;
-    overflow: hidden;
-  }
-  .emmas-about .card .video-frame {
-    border-radius: 10px;
-    overflow: hidden;
-    height: max-content;
-  }
-  .emmas-about .card .video-frame img {
-    height: 16rem;
-  }
-  .emmas-about .card .video-frame .svg_1 {
-    top: -120px;
-    left: 0;
-    height: 560px;
-    z-index: 1;
-  }
-  .emmas-about .card .video_media {
-    height: 300px;
-  }
-  .emmas-about .card .card-title {
-    width: max-content;
-    background: var(--theme-color-white);
-    padding: 10px;
-    transform: translate(50%, -20%);
-    border-radius: 15px;
-    z-index: 1;
-  }
-  .emmas-about .card .card-title h3 {
-    font-size: 1.25rem;
-    font-weight: bolder;
-    margin: 0;
-  }
-  .emmas-about .card .card-title h3 span {
-    font-size: 1rem;
-  }
-  .emmas-about .card .card-description p {
-    text-align: center;
-    font-size: 1rem;
-  }
-}
+
 :root {
   --theme-color-white: #ffffff;
   --theme-color-black: rgb(0, 0, 0);
@@ -572,20 +640,25 @@ body {
 .emmas-buy h2 {
   font-family: "Aloja", "Aloja-2", sans-serif;
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 1.75rem;
   letter-spacing: 0.5px;
   color: var(--theme-color-title);
   margin-bottom: 50px;
 }
-@media only screen and (max-width: 578px) {
+@media only screen and (min-width: 992px) {
   .emmas-buy h2 {
-    font-size: 1.75rem;
+    font-size: 3.5rem;
   }
 }
 .emmas-buy .card {
   border-radius: 15px;
   border: none;
   min-height: 21rem;
+}
+@media only screen and (max-width: 768px) {
+  .emmas-buy .card {
+    min-height: 16rem;
+  }
 }
 .emmas-buy .card .card-img {
   display: flex;
@@ -604,11 +677,24 @@ body {
     height: 85px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .emmas-buy .card .card-img {
+    padding: 15px;
+  }
+  .emmas-buy .card .card-img img {
+    height: 100px;
+  }
+}
 .emmas-buy .card .card-body p {
   text-align: center;
   font-size: 1.5rem;
   font-weight: lighter;
   line-height: 1.15;
+}
+@media only screen and (max-width: 768px) {
+  .emmas-buy .card .card-body p {
+    font-size: 1.15rem;
+  }
 }
 .emmas-buy .card:hover {
   transform: scale(1.02);
@@ -641,7 +727,7 @@ body {
   display: block;
   height: 50px;
   background-size: 50px 100%;
-  background-image: linear-gradient(135deg, black 25%, transparent 25%), linear-gradient(225deg, var(--theme-color-bg) 25%, transparent 25%);
+  background-image: linear-gradient(135deg, var(--theme-color-bg) 25%, transparent 25%), linear-gradient(225deg, var(--theme-color-bg) 25%, transparent 25%);
   background-position: 0 0;
 }
 
@@ -728,6 +814,10 @@ body {
     background-position: 0 0;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --theme-color-white: #ffffff;
   --theme-color-black: rgb(0, 0, 0);
@@ -773,6 +863,11 @@ footer .brand-footer {
   color: var(--theme-color-white);
   margin: 0;
 }
+@media only screen and (min-width: 768px) {
+  footer .brand-footer {
+    font-size: 1.5rem;
+  }
+}
 footer h3 {
   color: var(--theme-color-white);
   font-family: "Roboto", sans-serif;
@@ -796,7 +891,7 @@ footer .media-social {
 footer ul .nav-link {
   padding: 0.15rem;
   color: var(--theme-color-footer);
-  font-size: 1rem;
+  font-size: 0.85rem;
   line-height: 1.25;
 }
 footer ul .nav-link:hover {
@@ -809,6 +904,11 @@ footer ul .nav-link:hover {
   overflow: hidden;
   width: 100%;
   bottom: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .wave-footer {
+    height: 6rem;
+  }
 }
 
 .share-buttons {
@@ -1103,6 +1203,10 @@ input.whats-input[type=text]:focus {
   margin: 0;
   padding-bottom: 5px;
   letter-spacing: 0.75px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 :root {
